@@ -1,10 +1,10 @@
 import React from 'react';
 import Router from './router'
 
-function app()  {
+function App()  {
   return (
     <Router />
   )
 }
 
-export default app
+export default App
