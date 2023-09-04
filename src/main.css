@@ -29,7 +29,11 @@ nav {
   text-decoration: none;
   padding: 10px;
 }
-.nav-menu a.active, .nav-menu a:hover {
+.nav-menu a.active {
+  color: #209cee;
+  font-size: 20px;
+}
+.nav-menu a:hover {
   color: #209cee;
 }
 .nav-menu a i {

@@ -29,9 +29,14 @@ justify-content: center;
         text-decoration: none;
         padding: 10px;
   
-        &.active, 
+        &.active {
+            color: #209cee;
+            font-size: 20px;
+        }
+
         &:hover {
           color: #209cee;
+          
         }
   
         i {
