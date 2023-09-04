@@ -53,7 +53,7 @@ nav button:hover i {
 
 p {
   border-top: 1px solid rgba(211, 211, 211, 0.4745098039);
-  padding-top: 15px;
+  padding: 15px 0;
   text-align: center;
 }
 
