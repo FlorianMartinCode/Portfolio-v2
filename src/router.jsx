@@ -11,7 +11,7 @@ import Contact from './pages/contact/contact'
 
 import './main.css'
 
-function Header() {
+function HeaderFooter() {
   return (
     <>
         <Navbar/>
@@ -26,7 +26,7 @@ function Router() {
         <ThemeProvider>
             <BrowserRouter>
                 <Routes>
-                    <Route path="/" element={<Header />}>
+                    <Route path="/" element={<HeaderFooter />}>
                         <Route index element={<Home />} />
                         <Route path="/about" element={<About />} />
                         <Route path="/portfolio" element={<Portfolio />} />

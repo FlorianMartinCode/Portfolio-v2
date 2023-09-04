@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* Styles pour les écrans larges */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Poppins:wght@500;600;700;800&family=Roboto:wght@400;500;700&display=swap");
 nav {
   display: flex;
@@ -13,6 +14,7 @@ nav img {
 nav .nav-menu {
   width: 100%;
   display: flex;
+  flex-direction: row;
   justify-content: center;
 }
 nav .nav-menu ul {
@@ -35,13 +37,13 @@ nav .nav-menu ul a.active {
 nav .nav-menu ul a:hover {
   color: #209cee;
 }
-nav .nav-menu ul i {
+nav .nav-menu ul a i {
   margin-right: 15px;
 }
 nav button {
-  width: 40px;
-  height: 40px;
-  margin-right: 30px;
+  width: auto;
+  height: 100%;
+  padding-right: 30px;
   border: none;
   background-color: transparent;
   cursor: pointer;
@@ -51,6 +53,35 @@ nav button:hover i {
   color: #209cee;
 }
 
+/* Styles pour les écrans de largeur maximale de 1024px (mode responsive) */
+@media screen and (max-width: 1024px) {
+  nav {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    align-items: start;
+  }
+  nav img {
+    padding: 10px 15px;
+  }
+  nav .nav-menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  nav .nav-menu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  nav .nav-menu ul li {
+    margin: 15px 0 15px 0;
+  }
+  nav button {
+    width: auto;
+    padding: 10px 15px;
+  }
+}
 p {
   border-top: 1px solid rgba(211, 211, 211, 0.4745098039);
   padding: 15px 0;
