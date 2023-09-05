@@ -1,94 +1,132 @@
 nav {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    height: 100px;
-    align-items: center;
-    padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100px;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #d3d3d379;
   }
   
 .nav-menu {
-width: 100%;
-display: flex;
-flex-direction: row;
-justify-content: center;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   
-    ul {
-        list-style: none;
-        padding: 0;
+  ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  
+    li {
+      margin: 0 30px 0 30px;
+    }
+  }
+  
+  a {
+    text-decoration: none;
+    padding: 10px;
+  
+    &.active {
+      color: #209cee;
+      font-size: 20px;
+    }
+
+    &:hover {
+      color: #209cee;
+    }
+  
+    i {
+      margin-right: 15px;
+    }
+  }
+}
+  
+.theme-switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 25px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 25px;
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #209cee;
+    transition: .4s;
+    border-radius: 34px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 20px;
+      height: 20px;
+      left: 1px;
+      top: 2.5px;
+      background-color: #fff;
+      transition: 0.4s;
+      border-radius: 50px;
+    }
+  }
+
+  input {
+    display: none;
+  }
+
+  input:checked + .slider {
+    background-color: #209cee !important; /* Ajoutez !important */
+    &::before {
+      transform: translateX(25px) !important; /* Ajoutez !important */
+    }
+  }
+}
+
+.theme-switch:hover i {
+  color: #209cee;
+}
+  
+/* Styles pour les écrans de largeur maximale de 1024px (mode responsive) */
+@media screen and (max-width: 1024px) {
+  nav {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    align-items: start;
+    padding: 0;
+  
+    img {
+      padding: 10px 15px;
+    }
+  
+    .nav-menu {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+  
+      ul {
         display: flex;
-        flex-direction: row;
-        align-items: center;
+        flex-direction: column;
+        align-items: flex-start;
   
         li {
-            margin: 0 30px 0 30px;
-        }
-    }
-  
-    a {
-        text-decoration: none;
-        padding: 10px;
-  
-        &.active {
-            color: #209cee;
-            font-size: 20px;
-        }
-
-        &:hover {
-          color: #209cee;
-          
-        }
-  
-        i {
-          margin-right: 15px;
-        }
-    }
-}
-  
-button {
-    width: auto;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-    font-size: 25px;
-}
-  
-button:hover i {
-    color: #209cee;
-}
-  
-  /* Styles pour les écrans de largeur maximale de 1024px (mode responsive) */
-  @media screen and (max-width: 1024px) {
-    nav {
-      display: flex;
-      flex-direction: row;
-      height: 100%;
-      align-items: start;
-      padding: 0;
-  
-      img {
-        padding: 10px 15px;
-      }
-  
-      .nav-menu {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-  
-        ul {
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-  
-          li {
-            margin: 15px 0 15px 0;
-          }
+          margin: 15px 0 15px 0;
         }
       }
-  
-      button {
-        width: auto;
-        padding: 10px 15px;
-      }
     }
+  
+    .theme-switch {
+      width: auto;
+      padding: 10px 15px;
+    }
+  }
 }

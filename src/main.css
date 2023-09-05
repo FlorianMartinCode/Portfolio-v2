@@ -7,6 +7,7 @@ nav {
   height: 100px;
   align-items: center;
   padding: 20px;
+  border-bottom: 1px solid rgba(211, 211, 211, 0.4745098039);
 }
 
 .nav-menu {
@@ -40,15 +41,49 @@ nav {
   margin-right: 15px;
 }
 
-button {
-  width: auto;
+.theme-switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 25px;
   border: none;
   background-color: transparent;
   cursor: pointer;
   font-size: 25px;
 }
+.theme-switch .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #209cee;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+.theme-switch .slider::before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  left: 1px;
+  top: 2.5px;
+  background-color: #fff;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+.theme-switch input {
+  display: none;
+}
+.theme-switch input:checked + .slider {
+  background-color: #209cee !important; /* Ajoutez !important */
+}
+.theme-switch input:checked + .slider::before {
+  transform: translateX(25px) !important; /* Ajoutez !important */
+}
 
-button:hover i {
+.theme-switch:hover i {
   color: #209cee;
 }
 
@@ -77,7 +112,7 @@ button:hover i {
   nav .nav-menu ul li {
     margin: 15px 0 15px 0;
   }
-  nav button {
+  nav .theme-switch {
     width: auto;
     padding: 10px 15px;
   }
@@ -88,16 +123,15 @@ button:hover i {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding-top: 15px;
+  padding-top: 20px;
 }
 .div-footer a {
   margin: 0 30px;
 }
 
 p {
-  padding: 15px 0;
   text-align: center;
-  padding: 15px;
+  padding: 20px;
 }
 
 @media screen and (max-width: 1024px) {

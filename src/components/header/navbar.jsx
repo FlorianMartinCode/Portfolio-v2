@@ -33,9 +33,10 @@ function Navbar() {
           </li>
         </ul>
       </div> 
-      <button onClick={toggleTheme}>
-        <i className="fa-solid fa-circle-half-stroke"></i>
-      </button> 
+      <label className="theme-switch">
+        <input type="checkbox" onChange={toggleTheme} checked={darkTheme} />
+        <span className="slider"></span>
+      </label>
     </nav>
   )
 }
