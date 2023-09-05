@@ -11,13 +11,13 @@ function Navbar() {
   return (
     <nav className={navbarClasses}>
       <figure>
-          <img src={Icon} alt="Icon avec les initiales F et M" />
+          <img src={Icon} alt="icone avec les initiales F et M" />
       </figure>
       <div className='nav-menu'>
         <ul>
           <li>
             <NavLink to='/'>
-              <i className="fa-solid fa-house"></i>Acceuil</NavLink>
+              <i className="fa-solid fa-house"></i>Accueil</NavLink>
           </li>
           <li>
             <NavLink to='/about'>
