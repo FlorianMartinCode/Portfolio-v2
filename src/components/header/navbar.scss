@@ -116,7 +116,6 @@ nav {
       ul {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
   
         li {
           margin: 15px 0 15px 0;
@@ -125,8 +124,14 @@ nav {
     }
   
     .theme-switch {
-      width: auto;
+      margin: 13px 10px 0 0;
       padding: 10px 15px;
+
+      input:checked + .slider {
+        &::before {
+          transform: translateX(21px) !important;
+        }
+      }
     }
   }
 }

@@ -107,14 +107,16 @@ nav {
   nav .nav-menu ul {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
   }
   nav .nav-menu ul li {
     margin: 15px 0 15px 0;
   }
   nav .theme-switch {
-    width: auto;
+    margin: 13px 10px 0 0;
     padding: 10px 15px;
+  }
+  nav .theme-switch input:checked + .slider::before {
+    transform: translateX(21px) !important;
   }
 }
 .div-footer {
