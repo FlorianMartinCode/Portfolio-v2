@@ -58,7 +58,7 @@ nav {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #209cee;
+  background-color: #000;
   transition: 0.4s;
   border-radius: 34px;
 }
@@ -127,6 +127,9 @@ nav {
 }
 .div-footer a {
   margin: 0 30px;
+}
+.div-footer a:hover {
+  transform: scale(1.1);
 }
 
 p {
