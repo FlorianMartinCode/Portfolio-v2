@@ -34,7 +34,7 @@ function Navbar() {
         </ul>
       </div> 
       <label className="theme-switch">
-        <input type="checkbox" onChange={toggleTheme} checked={darkTheme} />
+        <input name="checkbox" type="checkbox" onChange={toggleTheme} checked={darkTheme} />
         <span className="slider"></span>
       </label>
     </nav>
