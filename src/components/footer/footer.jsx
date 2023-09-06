@@ -11,7 +11,7 @@ function Footer() {
     const footerClasses = darkTheme ? 'footer dark-theme' : 'footer light-theme';
 
   return (
-    <div className={footerClasses}>
+    <footer className={footerClasses}>
       <div className='div-footer'>
         <Link to="https://www.linkedin.com/in/florian-martin-477748266/" target="_blank" rel="noreferrer">
           <img src={LinkedIn} alt="logo linkedin" />
@@ -24,7 +24,7 @@ function Footer() {
         </Link>
       </div>
       <p className='copyright'>© 2023 Florian MARTIN. Tous droits réservés.</p>
-    </div>
+    </footer>
   )
 }
 
