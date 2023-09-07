@@ -30,6 +30,8 @@ function Home() {
           <img src={PhotoDeProfil} alt="Florian Martin" />
         </figure>
         <div className='home-icon-text'>
+          
+          <h1 className='home-titre'>Florian Martin <span id="dynamic-title">{dynamicTitles[currentIndex]}</span></h1>
           <figure className='home-icon'>
             <img src={HtmlImg} alt="logo html" />
             <img src={CssImg} alt="logo css" />
@@ -37,7 +39,6 @@ function Home() {
             <img src={JsImg} alt="logo js" />
             <img src={ReactImg} alt="logo react" />
           </figure>
-          <h1 className='home-titre'>Florian Martin <span id="dynamic-title">{dynamicTitles[currentIndex]}</span></h1>
           <p className='home-description'>Je suis un développeur front-end expérimenté avec des compétences en HTML, CSS, SASS, JavaScript et React. Mon expertise me permet de créer des interfaces utilisateur interactives et esthétiques, en combinant une solide structure, un style impeccable, des fonctionnalités dynamiques et l'utilisation de composants réutilisables. Je suis toujours en quête d'apprentissage pour rester à la pointe des dernières tendances en développement web.</p>
         </div>
       </div>
