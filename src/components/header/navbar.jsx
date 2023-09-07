@@ -6,7 +6,7 @@ import { useTheme } from '../../themes/themes'
 
 function Navbar() {
   const { darkTheme, toggleTheme } = useTheme();
-  const navbarClasses = darkTheme ? 'nav-menu dark-theme' : 'nav-menu light-theme';
+  const navbarClasses = darkTheme ? 'dark-theme' : 'light-theme';
 
   return (
     <header>
