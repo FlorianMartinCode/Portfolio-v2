@@ -1,6 +1,9 @@
+@import '../../Utils/Mixins/mixins.scss';
+
 .home-content {
     display: flex;
     justify-content: space-around;
+    height: 100%;
         
     .home-pdp {
         align-items: center;
@@ -14,8 +17,9 @@
         }
     }
 
-    .home-icon-text {
+    .home-text-et-btn {
         width: 40%;
+        height: 100%;
 
         .home-titre {
             color: #209cee;
@@ -45,27 +49,12 @@
         }
         .home-description {
             text-align: center;
-            padding: 25px 30px;
+            padding: 25px;
             font-size: 18px;
             line-height: 2;
         }
-    }
-
-    .home-icon {
-        display: flex;
-        justify-content: space-around;
-        padding: 50px 30px;
-        position: relative;
-
-        img {
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            transition: box-shadow 0.3s;
-        }
-
-        img:hover {
-            box-shadow: 0 0 20px #209cee;
+        .btn-about {
+            @include button;
         }
     }
 }
@@ -86,7 +75,7 @@
             }
         }
 
-        .home-icon-text {
+        .home-text-et-btn {
             width: 100%;
     
             .home-titre {
@@ -101,17 +90,8 @@
                 font-size: 18px;
                 line-height: 1;
             }
-        }
-
-        .home-icon {
-            display: flex;
-            justify-content: space-around;
-            padding: 30px 30px;
-            position: relative;
-    
-            img {
-                width: 45px;
-                height: 45px;
+            .btn-about {
+                margin: auto;
             }
         }
     }

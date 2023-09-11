@@ -1,8 +1,11 @@
-// Importation des dépendances React nécessaires
-import React, { createContext, useContext, useState } from 'react';
+import React, { createContext, useContext, useState, useEffect } from 'react';
 
 // Crée un contexte de thème
 const ThemeContext = createContext();
+
+// Création de variables pour les noms de classes de thème
+const DARK_THEME_CLASS = 'dark-theme';
+const LIGHT_THEME_CLASS = 'light-theme';
 
 // Hook personnalisé pour accéder au thème et à la fonction de bascule du thème
 export const useTheme = () => {
@@ -20,6 +23,12 @@ export const ThemeProvider = ({ children }) => {
     // Inverse la valeur de darkTheme
     setDarkTheme(!darkTheme);
   };
+
+  useEffect(() => {
+    // Applique la classe de thème au corps du document en fonction de l'état du thème
+    document.body.classList.toggle(DARK_THEME_CLASS, darkTheme);
+    document.body.classList.toggle(LIGHT_THEME_CLASS, !darkTheme);
+  }, [darkTheme]);
 
   // Rendu du composant
   return (

@@ -6,11 +6,10 @@ import { useTheme } from '../../themes/themes'
 
 function Navbar() {
   const { darkTheme, toggleTheme } = useTheme();
-  const navbarClasses = darkTheme ? 'dark-theme' : 'light-theme';
 
   return (
     <header>
-      <nav className={navbarClasses}>
+      <nav>
         <figure>
             <img src={Icon} alt="icone avec les initiales F et M" />
         </figure>
