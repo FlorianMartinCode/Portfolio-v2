@@ -372,7 +372,6 @@ nav .theme-switch .theme-switch:hover i {
   height: auto;
   display: flex;
   flex-direction: column;
-  box-sizing: border-box;
   padding: 30px 5%;
 }
 .collapse .label-container {
@@ -387,6 +386,9 @@ nav .theme-switch .theme-switch:hover i {
   justify-content: space-between;
   cursor: pointer;
   border: none;
+}
+.collapse .label-container label {
+  cursor: pointer;
 }
 .collapse .label-container.open {
   border-radius: 5px 5px 0 0;
