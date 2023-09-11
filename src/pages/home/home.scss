@@ -9,6 +9,13 @@
         align-items: center;
         display: flex;
         justify-content: center;
+        padding: 50px 0;
+        border-radius: 50%;
+        border: 10px solid #209cee;
+        max-width: 350px;
+        width: 100%;
+        max-height: 300px;
+        height: 100%;
             
         img {
             border: 2px solid #d3d3d379;
@@ -66,12 +73,12 @@
         flex-direction: column;
 
         .home-pdp {
-                
+            margin: auto;
+            border: none;
+            padding: 0;
+            
             img {
-                width: 80%;
-                max-width: 500px;
-                height: 80%;
-                max-height: 500px;
+                width: 100%;
             }
         }
 
@@ -86,12 +93,7 @@
             }
             .home-description {
                 text-align: center;
-                padding: 25px 30px;
-                font-size: 18px;
                 line-height: 1;
-            }
-            .btn-about {
-                margin: auto;
             }
         }
     }
