@@ -3,7 +3,6 @@
 .home-content {
   display: flex;
   justify-content: space-around;
-  height: 100%;
 }
 .home-content .home-pdp {
   align-items: center;
@@ -100,36 +99,45 @@
     line-height: 1;
   }
 }
-.about-content {
+.about-content-info {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.about-content .about-content-left {
+.about-content-info .about-content-left {
   display: flex;
   flex-direction: column;
 }
-.about-content .about-content-left .personal-infos {
+.about-content-info .about-content-left .personal-infos {
   display: flex;
   flex-wrap: wrap;
   padding: 25px 0;
 }
-.about-content .about-content-left .personal-infos .info {
+.about-content-info .about-content-left .personal-infos .info {
   width: calc(50% - 35px);
   margin-bottom: 20px;
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-.about-content .about-content-left .personal-infos .info h2 {
+.about-content-info .about-content-left .personal-infos .info h2 {
   margin-right: 20px;
   color: #209cee;
 }
-.about-content .about-content-left .personal-infos .info p, .about-content .about-content-left .personal-infos .info span {
+.about-content-info .about-content-left .personal-infos .info p, .about-content-info .about-content-left .personal-infos .info span {
   font-size: 20px;
   margin: 0 5px;
 }
-.about-content .about-content-left .btn-download-cv {
+.about-content-info .about-content-right {
+  width: 20%;
+}
+.about-content-info .about-content-right img {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 70px;
+}
+
+.btn-download-cv {
   text-transform: uppercase;
   font-weight: bold;
   border: 1px solid #209cee;
@@ -142,64 +150,83 @@
   background-color: transparent;
   transition: background-color 0.5s ease;
 }
-.about-content .about-content-left .btn-download-cv:hover {
+.btn-download-cv:hover {
   background-color: #209cee;
 }
-.about-content .about-content-right {
-  width: 20%;
+
+.about-content-collapse {
+  display: flex;
+  flex-direction: row;
 }
-.about-content .about-content-right img {
-  width: 200px;
-  height: 200px;
-  margin-bottom: 70px;
+.about-content-collapse .home-icon {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+}
+.about-content-collapse .home-icon img {
+  width: 60px;
+  height: auto;
+  border-radius: 50%;
+  transition: box-shadow 0.3s;
+}
+.about-content-collapse .home-icon img:hover {
+  box-shadow: 0 0 20px #209cee;
 }
 
 @media screen and (max-width: 1024px) {
-  .about-content .about-content-left .personal-infos {
+  .about-content-info .about-content-left .personal-infos {
     min-width: 100%;
     width: calc(50% - 0px);
   }
-  .about-content .about-content-left .personal-infos .info {
+  .about-content-info .about-content-left .personal-infos .info {
     margin: auto;
   }
-  .about-content .about-content-left .personal-infos .info h2 {
+  .about-content-info .about-content-left .personal-infos .info h2 {
     margin-right: 0;
     font-size: 20px;
     color: #209cee;
   }
-  .about-content .about-content-left .personal-infos .info p, .about-content .about-content-left .personal-infos .info span {
+  .about-content-info .about-content-left .personal-infos .info p, .about-content-info .about-content-left .personal-infos .info span {
     font-size: 18px;
   }
-  .about-content .about-content-right {
+  .about-content-info .about-content-right {
     display: none;
+  }
+  .about-content-collapse {
+    display: flex;
+    flex-direction: column;
   }
 }
 @media screen and (max-width: 768px) {
-  .about-content {
+  .about-content-info {
     text-align: center;
     display: flex;
     justify-content: center;
   }
-  .about-content .about-content-left {
+  .about-content-info .about-content-left {
     margin-top: 25px;
   }
-  .about-content .about-content-left .personal-infos {
+  .about-content-info .about-content-left .personal-infos {
     padding: 25px 0;
   }
-  .about-content .about-content-left .personal-infos .info {
+  .about-content-info .about-content-left .personal-infos .info {
     width: 100%;
     flex-direction: column;
   }
-  .about-content .about-content-left .personal-infos .info h2 {
+  .about-content-info .about-content-left .personal-infos .info h2 {
     width: 100%;
     margin-right: 0;
   }
-  .about-content .about-content-left .personal-infos .info p, .about-content .about-content-left .personal-infos .info span {
+  .about-content-info .about-content-left .personal-infos .info p, .about-content-info .about-content-left .personal-infos .info span {
     width: 100%;
     margin: 5px 0;
   }
-  .about-content .about-content-left .btn-download-cv {
+  .btn-download-cv {
     margin: auto;
+  }
+  .about-content-collapse .home-icon img {
+    width: 35px;
+    height: auto;
   }
 }
 nav {
@@ -339,18 +366,59 @@ nav .theme-switch .theme-switch:hover i {
     height: 25px;
   }
 }
+.collapse {
+  width: 100%;
+  min-height: 52px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 30px 5%;
+}
+.collapse .label-container {
+  font-size: 24px;
+  font-weight: 500;
+  padding: 0 15px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  background-color: #209cee;
+  border-radius: 5px;
+  justify-content: space-between;
+  cursor: pointer;
+  border: none;
+}
+.collapse .label-container.open {
+  border-radius: 5px 5px 0 0;
+}
+.collapse .label-container .rotate-up {
+  transform: rotate(0deg);
+  transition: transform 0.3s;
+}
+.collapse .label-container .rotate-down {
+  transform: rotate(180deg);
+  transition: transform 0.3s;
+}
+.collapse .description-collapse {
+  background-color: rgba(211, 211, 211, 0.4745098039);
+  margin: 0;
+  padding: 15px;
+  border-radius: 0 0 5px 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .collapse .label-container {
+    font-size: 20px;
+  }
+}
 /* Thème sombre */
 .dark-theme {
   background-color: #333;
   color: #fff;
 }
-.dark-theme a {
-  color: #fff;
-}
-.dark-theme button {
-  color: #fff;
-}
-.dark-theme span#dynamic-title {
+.dark-theme a, .dark-theme button,
+.dark-theme span#dynamic-title,
+.dark-theme label {
   color: #fff;
 }
 
@@ -359,13 +427,9 @@ nav .theme-switch .theme-switch:hover i {
   background-color: #fff;
   color: #333;
 }
-.light-theme a {
-  color: #000;
-}
-.light-theme button {
-  color: #000;
-}
-.light-theme span#dynamic-title {
+.light-theme a, .light-theme button,
+.light-theme span#dynamic-title,
+.light-theme label {
   color: #000;
 }
 
@@ -376,7 +440,7 @@ nav .theme-switch .theme-switch:hover i {
 }
 
 main {
-  padding: 7.5% 30px;
+  padding: 30px;
 }
 
 input {

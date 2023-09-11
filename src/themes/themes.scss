@@ -3,15 +3,9 @@
     background-color: #333;
     color: #fff;
 
-    a {
-        color: #fff;
-    }
-
-    button {
-        color: #fff;
-    }
-
-    span#dynamic-title {
+    a, button,
+    span#dynamic-title,
+    label {
         color: #fff;
     }
   }
@@ -21,15 +15,9 @@
     background-color: #fff;
     color: #333;
 
-    a {
-        color: #000;
-    }
-
-    button {
-        color: #000;
-    }
-
-    span#dynamic-title {
+    a, button,
+    span#dynamic-title,
+    label {
         color: #000;
     }
   }

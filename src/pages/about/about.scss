@@ -1,6 +1,6 @@
 @import '../../Utils/Mixins/mixins.scss';
 
-.about-content {
+.about-content-info {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -34,9 +34,6 @@
                 }
             }
         }
-        .btn-download-cv {
-            @include button;
-        }
     }
     .about-content-right {
         width: 20%;
@@ -48,9 +45,32 @@
         }
     }
 }
+.btn-download-cv {
+    @include button;
+}
+.about-content-collapse {
+    display: flex;
+    flex-direction: row;
+
+    .home-icon {
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+
+        img {
+            width: 60px;
+            height: auto;
+            border-radius: 50%;
+            transition: box-shadow 0.3s;
+        }
+        img:hover {
+            box-shadow: 0 0 20px #209cee;
+        }
+    }
+}
 
 @media screen and (max-width: 1024px) {
-    .about-content {
+    .about-content-info {
         .about-content-left {
             .personal-infos {
                 min-width: 100%;
@@ -73,11 +93,15 @@
             display: none;
         }
     }
+    .about-content-collapse {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 @media screen and (max-width: 768px) {
 
-    .about-content {
+    .about-content-info {
         text-align: center;
         display: flex;
         justify-content: center;
@@ -99,10 +123,13 @@
                     }
                 }
             }
-            .btn-download-cv {
-                margin: auto;
-            }
-        }
-        
+        } 
+    }
+    .btn-download-cv {
+        margin: auto;
+    }
+    .about-content-collapse .home-icon img {
+        width: 35px;
+        height: auto;
     }
 }

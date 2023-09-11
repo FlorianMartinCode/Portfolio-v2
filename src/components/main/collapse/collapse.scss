@@ -1,0 +1,50 @@
+.collapse {
+    width: 100%;
+    min-height: 52px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 30px 5%;
+
+    .label-container {
+        font-size: 24px;
+        font-weight: 500;
+        padding: 0 15px;
+        height: 52px;
+        display: flex;
+        align-items: center;
+        background-color: #209cee;
+        border-radius: 5px;
+        justify-content: space-between;
+        cursor: pointer;
+        border: none;
+
+        &.open {
+            border-radius: 5px 5px 0 0;
+        }
+        .rotate-up {
+            transform: rotate(0deg);
+            transition: transform 0.3s;
+        }
+        .rotate-down {
+            transform: rotate(180deg);
+            transition: transform 0.3s;
+        }
+    }
+
+    .description-collapse {
+        background-color: rgba(211, 211, 211, 0.4745098039);
+        margin: 0;
+        padding: 15px;
+        border-radius: 0 0 5px 5px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .collapse {
+        .label-container {
+            font-size: 20px;
+        }
+    }
+}
