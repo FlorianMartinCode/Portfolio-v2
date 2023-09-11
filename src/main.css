@@ -369,7 +369,7 @@ nav .theme-switch .theme-switch:hover i {
     height: 25px;
   }
 }
-.collapse {
+.collapse-container {
   width: 100%;
   min-height: 52px;
   height: auto;
@@ -377,7 +377,7 @@ nav .theme-switch .theme-switch:hover i {
   flex-direction: column;
   padding: 30px 5%;
 }
-.collapse .label-container {
+.collapse-container .collapse {
   font-size: 24px;
   font-weight: 500;
   padding: 0 15px;
@@ -390,21 +390,18 @@ nav .theme-switch .theme-switch:hover i {
   cursor: pointer;
   border: none;
 }
-.collapse .label-container label {
-  cursor: pointer;
-}
-.collapse .label-container.open {
+.collapse-container .collapse.open {
   border-radius: 5px 5px 0 0;
 }
-.collapse .label-container .rotate-up {
+.collapse-container .collapse .rotate-up {
   transform: rotate(0deg);
   transition: transform 0.3s;
 }
-.collapse .label-container .rotate-down {
+.collapse-container .collapse .rotate-down {
   transform: rotate(180deg);
   transition: transform 0.3s;
 }
-.collapse .description-collapse {
+.collapse-container .description-collapse {
   background-color: rgba(211, 211, 211, 0.4745098039);
   margin: 0;
   padding: 15px;
@@ -412,7 +409,7 @@ nav .theme-switch .theme-switch:hover i {
 }
 
 @media screen and (max-width: 768px) {
-  .collapse .label-container {
+  .collapse-container .collapse {
     font-size: 20px;
   }
 }
@@ -422,8 +419,7 @@ nav .theme-switch .theme-switch:hover i {
   color: #fff;
 }
 .dark-theme a, .dark-theme button,
-.dark-theme span#dynamic-title,
-.dark-theme label {
+.dark-theme span#dynamic-title {
   color: #fff;
 }
 
@@ -433,8 +429,7 @@ nav .theme-switch .theme-switch:hover i {
   color: #333;
 }
 .light-theme a, .light-theme button,
-.light-theme span#dynamic-title,
-.light-theme label {
+.light-theme span#dynamic-title {
   color: #000;
 }
 

@@ -10,9 +10,9 @@ function Collapse({ title, content }) {
   };
 
   return (
-    <div className="collapse">
-      <button className={`label-container ${activeCollapse ? 'close' : 'open'}`} onClick={toggleCollapse}>
-        <label>{title}</label>
+    <div className="collapse-container">
+      <button className={`collapse ${activeCollapse ? 'close' : 'open'}`} onClick={toggleCollapse}>
+        {title}
         <FontAwesomeIcon
           icon={faChevronUp}
           className={activeCollapse ? 'rotate-up' : 'rotate-down'}
