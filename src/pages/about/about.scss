@@ -3,6 +3,7 @@
 .about-content {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 
     .about-title {
     }
@@ -14,11 +15,10 @@
         .personal-infos {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
             padding: 25px 0;
 
             .info {
-                width: calc(50% - 10px);
+                width: calc(50% - 35px);
                 margin-bottom: 20px;
                 display: flex;
                 flex-direction: row;
@@ -26,8 +26,9 @@
 
                 h2 {
                     margin-right: 20px;
+                    color: #209cee;
                 }
-                p {
+                p, span{
                     font-size: 20px;
                     margin: 0 5px;
                 }
@@ -38,17 +39,43 @@
         }
     }
     .about-content-right {
-        width: 30%;
+        width: 20%;
 
         img {
             width: 200px; 
             height: 200px;
             margin-bottom: 70px;
-          }
+        }
     }
 }
 
 @media screen and (max-width: 1024px) {
+    .about-content {
+        .about-content-left {
+            .personal-infos {
+                min-width: 100%;
+                width: calc(50% - 0px);
+                .info {
+                    margin: auto;
+
+                    h2 {
+                        margin-right: 0;
+                        font-size: 20px;
+                        color: #209cee;
+                    }
+                    p, span{
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+        .about-content-right {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
 
     .about-content {
         text-align: center;
@@ -64,13 +91,11 @@
                     flex-direction: column;
                     h2 {
                         width: 100%;
-                        font-size: 20px;
                         margin-right: 0;
                     }
-                    p{
+                    p, span {
                         width: 100%;
-                        font-size: 18px;
-                        margin: 5px 0 0 0;
+                        margin: 5px 0;
                     }
                 }
             }
@@ -78,8 +103,6 @@
                 margin: auto;
             }
         }
-        .about-content-right {
-            display: none;
-        }
+        
     }
 }

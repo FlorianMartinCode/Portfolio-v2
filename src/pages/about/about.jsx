@@ -12,11 +12,11 @@ function about() {
           <div className='personal-infos'>
             <div className='info'>
               <h2>Nom :</h2>
-              <p>Martin</p>
+              <span>Martin</span>
             </div>
             <div className='info'>
               <h2>Prénom :</h2>
-              <p>Florian</p>
+              <span>Florian</span>
             </div>
             <div className='info'>
               <h2>Age :</h2>
@@ -36,12 +36,11 @@ function about() {
             </div>
             <div className='info'>
               <h2>Email :</h2>
-              <p>florian.martin700@gmail.com</p>
+              <span>florian.martin700@gmail.com</span>
             </div>
             <div className='info'>
               <h2>Langages :</h2>
-              <p>Français,</p>
-              <p>Anglais "A2"</p>
+              <p>Français, Anglais "A2"</p>
             </div>
           </div>
           <div className='btn-download-cv'>
