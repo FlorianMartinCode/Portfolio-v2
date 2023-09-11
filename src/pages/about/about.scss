@@ -1,0 +1,84 @@
+@import '../../Utils/Mixins/mixins.scss';
+
+.about-content {
+    display: flex;
+
+    .about-title {
+        align-items: center;
+    }
+
+    .about-content-left {
+        display: flex;
+        flex-direction: column;
+
+        .personal-infos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 25px 0;
+
+            .info {
+                width: calc(50% - 10px);
+                margin-bottom: 20px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+
+                h2 {
+                    margin-right: 20px;
+                }
+                p {
+                    font-size: 20px;
+                    margin: 0 5px;
+                }
+            }
+        }
+        .btn-download-cv {
+            @include button;
+        }
+    }
+    .about-content-right {
+        width: 30%;
+
+        .about-content-right img {
+            width: 50px; 
+            height: 50px;
+          }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    .about-content {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+
+        .about-content-left {
+            margin-top: 25px;
+            .personal-infos {
+                padding: 25px 0;
+                .info {
+                    width: 100%;
+                    flex-direction: column;
+                    h2 {
+                        width: 100%;
+                        font-size: 20px;
+                        margin-right: 0;
+                    }
+                    p{
+                        width: 100%;
+                        font-size: 18px;
+                        margin: 5px 0 0 0;
+                    }
+                }
+            }
+            .btn-download-cv {
+                margin: auto;
+            }
+        }
+        .about-content-right {
+            display: none;
+        }
+    }
+}
