@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import iconInfo from '../../assets/info.png'
 import Collapse from '../../components/main/collapse/collapse'
 import HtmlImg from '../../assets/icon-skills/html.png'

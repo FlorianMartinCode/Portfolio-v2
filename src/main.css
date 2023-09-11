@@ -3,6 +3,7 @@
 .home-content {
   display: flex;
   justify-content: space-around;
+  padding: 0 0 160px 0;
 }
 .home-content .home-pdp {
   align-items: center;
@@ -67,6 +68,7 @@
   margin: 30px auto;
   background-color: transparent;
   transition: background-color 0.5s ease;
+  cursor: pointer;
 }
 .home-content .home-text-et-btn .btn-about:hover {
   background-color: #209cee;
@@ -149,6 +151,7 @@
   margin: 30px auto;
   background-color: transparent;
   transition: background-color 0.5s ease;
+  cursor: pointer;
 }
 .btn-download-cv:hover {
   background-color: #209cee;
@@ -442,7 +445,7 @@ nav .theme-switch .theme-switch:hover i {
 }
 
 main {
-  padding: 30px;
+  padding: 100px 30px;
 }
 
 input {
