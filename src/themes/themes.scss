@@ -1,22 +1,40 @@
 /* Thème sombre */
 .dark-theme {
-    background-color: #333;
-    color: #fff;
+  background-color: #333;
+  color: #fff;
 
-    a, button,
-    span#dynamic-title {
-        color: #fff;
-    }
+  a, button,
+  span#dynamic-title {
+    color: #fff;
   }
   
-  /* Thème clair (par défaut) */
-  .light-theme {
-    background-color: #fff;
-    color: #333;
+  .about-content-right,
+  .content-right{
+    border: 2px solid rgba(211, 211, 211, 0.089);
 
-    a, button,
-    span#dynamic-title {
-        color: #000;
+    h2 {
+      border-bottom: 1px solid rgba(211, 211, 211, 0.089);
     }
   }
+}
+  
+/* Thème clair (par défaut) */
+.light-theme {
+  background-color: #fff;
+  color: #333;
+
+  a, button,
+  span#dynamic-title {
+    color: #000;
+  }
+
+  .about-content-right,
+  .content-right {
+    border: 2px solid rgba(211, 211, 211, 0.4745098039);
+
+    h2 {
+      border-bottom: 1px solid rgba(211, 211, 211, 0.4745098039);
+    }
+  }
+}
   

@@ -52,11 +52,11 @@ function about() {
           </div>
         </div>
         <div className='about-content-right'>
-          <div className='content-right-old'>
+          <div className='content-right'>
             <h2>1 +</h2>
             <p>Années d'expérience</p>
           </div>
-          <div className='content-right-projet'>
+          <div className='content-right'>
             <h2>9 +</h2>
             <p>Projet terminé</p>
           </div>

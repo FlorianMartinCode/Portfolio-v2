@@ -29,35 +29,19 @@
         }
     }
     .about-content-right {
-        border: 2px solid rgba(211, 211, 211, 0.089);
         display: flex;
         justify-content: space-between;
         padding: 15px;
         gap: 15px;
 
-        .content-right-old {
-            border: 2px solid rgba(211, 211, 211, 0.089);
+        .content-right {
             padding: 30px 10px;
             width: 125px;
 
             h2 {
                 width: 40px;
                 color: #209cee;
-                border-bottom: 1px solid rgba(211, 211, 211, 0.089);
-            }
-            p {
-                margin-top: 8px;
-                text-align: center;
-            }
-        }
-        .content-right-projet {
-            border: 2px solid rgba(211, 211, 211, 0.089);
-            padding: 30px 15px;
-
-            h2 {
-                width: 40px;
-                color: #209cee;
-                border-bottom: 1px solid rgba(211, 211, 211, 0.089);
+                // border-bottom: 1px solid rgba(211, 211, 211, 0.089);
             }
             p {
                 margin-top: 8px;
@@ -66,6 +50,7 @@
         }
     }
 }
+
 .btn-download-cv {
     @include button;
     margin: 94px auto 70px auto;
