@@ -3,7 +3,7 @@
 .home-content {
   display: flex;
   justify-content: space-around;
-  padding: 0 0 190px 0;
+  padding: 80px 0 150px 0;
 }
 .home-content .home-pdp {
   align-items: center;
@@ -33,7 +33,6 @@
   text-align: center;
   display: flex;
   justify-content: space-between;
-  font-size: 34px;
   padding-bottom: 30px;
 }
 .home-content .home-text-et-btn .home-titre span#dynamic-title {
@@ -173,7 +172,7 @@
   background-color: transparent;
   transition: background-color 0.5s ease;
   cursor: pointer;
-  margin: 65px auto 70px auto;
+  margin: 94px auto 70px auto;
 }
 .btn-download-cv:hover {
   background-color: #209cee;
@@ -463,6 +462,10 @@ nav .theme-switch .theme-switch:hover i {
 
 main {
   padding: 50px;
+}
+
+h1 {
+  font-size: 34px;
 }
 
 input {

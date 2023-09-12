@@ -6,9 +6,6 @@
     justify-content: space-around;
 
     .about-content-left {
-        // display: flex;
-        // flex-direction: column;
-
         .personal-infos {
             display: flex;
             flex-wrap: wrap;
@@ -71,7 +68,7 @@
 }
 .btn-download-cv {
     @include button;
-    margin: 65px auto 70px auto;
+    margin: 94px auto 70px auto;
 }
 .about-content-collapse {
     display: flex;
