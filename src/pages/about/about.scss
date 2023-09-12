@@ -3,26 +3,25 @@
 .about-content-info {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 
     .about-content-left {
-        display: flex;
-        flex-direction: column;
+        // display: flex;
+        // flex-direction: column;
 
         .personal-infos {
             display: flex;
             flex-wrap: wrap;
+            gap: 20px;
             padding: 25px 0;
 
             .info {
-                width: calc(50% - 35px);
                 margin-bottom: 20px;
                 display: flex;
                 flex-direction: row;
                 align-items: center;
 
                 h2 {
-                    margin-right: 20px;
                     color: #209cee;
                 }
                 p, span{
@@ -33,17 +32,46 @@
         }
     }
     .about-content-right {
-        width: 20%;
+        border: 2px solid rgba(211, 211, 211, 0.089);
+        display: flex;
+        justify-content: space-between;
+        padding: 15px;
+        gap: 15px;
 
-        img {
-            width: 200px; 
-            height: 200px;
-            margin-bottom: 70px;
+        .content-right-old {
+            border: 2px solid rgba(211, 211, 211, 0.089);
+            padding: 30px 10px;
+            width: 125px;
+
+            h2 {
+                width: 40px;
+                color: #209cee;
+                border-bottom: 1px solid rgba(211, 211, 211, 0.089);
+            }
+            p {
+                margin-top: 8px;
+                text-align: center;
+            }
+        }
+        .content-right-projet {
+            border: 2px solid rgba(211, 211, 211, 0.089);
+            padding: 30px 15px;
+
+            h2 {
+                width: 40px;
+                color: #209cee;
+                border-bottom: 1px solid rgba(211, 211, 211, 0.089);
+            }
+            p {
+                margin-top: 8px;
+                text-align: center;
+            }
         }
     }
 }
 .btn-download-cv {
     @include button;
+    margin: 65px auto 70px auto;
 }
 .about-content-collapse {
     display: flex;
@@ -70,8 +98,8 @@
     .about-content-info {
         .about-content-left {
             .personal-infos {
-                min-width: 100%;
-                width: calc(50% - 0px);
+                flex-direction: column;
+                gap: 0;
                 .info {
                     margin: auto;
 
@@ -85,9 +113,6 @@
                     }
                 }
             }
-        }
-        .about-content-right {
-            display: none;
         }
     }
     .about-content-collapse {
@@ -121,6 +146,9 @@
                 }
             }
         } 
+        .about-content-right {
+            display: none;
+        }
     }
     .btn-download-cv {
         margin: auto;

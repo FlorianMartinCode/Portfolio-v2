@@ -14,42 +14,53 @@ function about() {
         <div className='about-content-left'>
           <h1 className='about-title'>Infos personelles</h1>
           <div className='personal-infos'>
-            <div className='info'>
-              <h2>Nom :</h2>
-              <span>Martin</span>
+            <div className='personal-info-1'>
+              <div className='info'>
+                <h2>Nom :</h2>
+                <span>Martin</span>
+              </div>
+              <div className='info'>
+                <h2>Prénom :</h2>
+                <span>Florian</span>
+              </div>
+              <div className='info'>
+                <h2>Age :</h2>
+                <p>25 ans</p>
+              </div>
+              <div className='info'>
+                <h2>Nationalité :</h2>
+                <p>Française</p>
+              </div>
             </div>
-            <div className='info'>
-              <h2>Prénom :</h2>
-              <span>Florian</span>
-            </div>
-            <div className='info'>
-              <h2>Age :</h2>
-              <p>25 ans</p>
-            </div>
-            <div className='info'>
-              <h2>Nationalité :</h2>
-              <p>Française</p>
-            </div>
-            <div className='info'>
-              <h2>Freelance :</h2>
-              <p>Disponible</p>
-            </div>
-            <div className='info'>
-              <h2>Address :</h2>
-              <p>Paris</p>
-            </div>
-            <div className='info'>
-              <h2>Email :</h2>
-              <span>florian.martin700@gmail.com</span>
-            </div>
-            <div className='info'>
-              <h2>Langages :</h2>
-              <p>Français, Anglais "A2"</p>
+            <div className='personal-info-2'>
+              <div className='info'>
+                <h2>Freelance :</h2>
+                <p>Disponible</p>
+              </div>
+              <div className='info'>
+                <h2>Address :</h2>
+                <p>Paris</p>
+              </div>
+              <div className='info'>
+                <h2>Email :</h2>
+                <span>florian.martin700@gmail.com</span>
+              </div>
+              <div className='info'>
+                <h2>Langages :</h2>
+                <p>Français, Anglais "A2"</p>
+              </div>
             </div>
           </div>
         </div>
         <div className='about-content-right'>
-          <img src={iconInfo} alt="logo info" />
+          <div className='content-right-old'>
+            <h2>1 +</h2>
+            <p>Années d'expérience</p>
+          </div>
+          <div className='content-right-projet'>
+            <h2>9 +</h2>
+            <p>Projet terminé</p>
+          </div>
         </div>
       </section>
       <div className='btn-download-cv'>

@@ -3,7 +3,7 @@
 .home-content {
   display: flex;
   justify-content: space-around;
-  padding: 0 0 160px 0;
+  padding: 0 0 190px 0;
 }
 .home-content .home-pdp {
   align-items: center;
@@ -104,26 +104,21 @@
 .about-content-info {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-}
-.about-content-info .about-content-left {
-  display: flex;
-  flex-direction: column;
+  justify-content: space-around;
 }
 .about-content-info .about-content-left .personal-infos {
   display: flex;
   flex-wrap: wrap;
+  gap: 20px;
   padding: 25px 0;
 }
 .about-content-info .about-content-left .personal-infos .info {
-  width: calc(50% - 35px);
   margin-bottom: 20px;
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 .about-content-info .about-content-left .personal-infos .info h2 {
-  margin-right: 20px;
   color: #209cee;
 }
 .about-content-info .about-content-left .personal-infos .info p, .about-content-info .about-content-left .personal-infos .info span {
@@ -131,12 +126,38 @@
   margin: 0 5px;
 }
 .about-content-info .about-content-right {
-  width: 20%;
+  border: 2px solid rgba(211, 211, 211, 0.089);
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  gap: 15px;
 }
-.about-content-info .about-content-right img {
-  width: 200px;
-  height: 200px;
-  margin-bottom: 70px;
+.about-content-info .about-content-right .content-right-old {
+  border: 2px solid rgba(211, 211, 211, 0.089);
+  padding: 30px 10px;
+  width: 125px;
+}
+.about-content-info .about-content-right .content-right-old h2 {
+  width: 40px;
+  color: #209cee;
+  border-bottom: 1px solid rgba(211, 211, 211, 0.089);
+}
+.about-content-info .about-content-right .content-right-old p {
+  margin-top: 8px;
+  text-align: center;
+}
+.about-content-info .about-content-right .content-right-projet {
+  border: 2px solid rgba(211, 211, 211, 0.089);
+  padding: 30px 15px;
+}
+.about-content-info .about-content-right .content-right-projet h2 {
+  width: 40px;
+  color: #209cee;
+  border-bottom: 1px solid rgba(211, 211, 211, 0.089);
+}
+.about-content-info .about-content-right .content-right-projet p {
+  margin-top: 8px;
+  text-align: center;
 }
 
 .btn-download-cv {
@@ -152,6 +173,7 @@
   background-color: transparent;
   transition: background-color 0.5s ease;
   cursor: pointer;
+  margin: 65px auto 70px auto;
 }
 .btn-download-cv:hover {
   background-color: #209cee;
@@ -178,8 +200,8 @@
 
 @media screen and (max-width: 1024px) {
   .about-content-info .about-content-left .personal-infos {
-    min-width: 100%;
-    width: calc(50% - 0px);
+    flex-direction: column;
+    gap: 0;
   }
   .about-content-info .about-content-left .personal-infos .info {
     margin: auto;
@@ -191,9 +213,6 @@
   }
   .about-content-info .about-content-left .personal-infos .info p, .about-content-info .about-content-left .personal-infos .info span {
     font-size: 18px;
-  }
-  .about-content-info .about-content-right {
-    display: none;
   }
   .about-content-collapse {
     display: flex;
@@ -223,6 +242,9 @@
   .about-content-info .about-content-left .personal-infos .info p, .about-content-info .about-content-left .personal-infos .info span {
     width: 100%;
     margin: 5px 0;
+  }
+  .about-content-info .about-content-right {
+    display: none;
   }
   .btn-download-cv {
     margin: auto;
@@ -440,7 +462,7 @@ nav .theme-switch .theme-switch:hover i {
 }
 
 main {
-  padding: 100px 30px;
+  padding: 50px;
 }
 
 input {
