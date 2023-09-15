@@ -8,6 +8,7 @@
     .about-content-left {
         .personal-infos {
             display: flex;
+            flex-direction: row;
             flex-wrap: wrap;
             gap: 20px;
             padding: 25px 0;
@@ -37,16 +38,19 @@
         .content-right {
             padding: 30px 10px;
             width: 125px;
+            transition: box-shadow 0.3s;
 
             h2 {
                 width: 40px;
                 color: #209cee;
-                // border-bottom: 1px solid rgba(211, 211, 211, 0.089);
             }
             p {
                 margin-top: 8px;
                 text-align: center;
             }
+        }
+        .content-right:hover {
+            box-shadow: 0 0 20px #209cee;
         }
     }
 }
@@ -68,10 +72,6 @@
             width: 60px;
             height: auto;
             border-radius: 50%;
-            transition: box-shadow 0.3s;
-        }
-        img:hover {
-            box-shadow: 0 0 20px #209cee;
         }
     }
 }

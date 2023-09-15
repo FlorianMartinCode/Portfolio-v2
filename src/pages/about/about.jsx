@@ -5,49 +5,31 @@ import CssImg from '../../assets/icon-skills/css.png'
 import SassImg from '../../assets/icon-skills/sass.png'
 import JsImg from '../../assets/icon-skills/js.png'
 import ReactImg from '../../assets/icon-skills/react.png'
+import Data from'../../Data/data.json'
 
 function about() {
+  const { "personal-info-1": personalInfo1, "personal-info-2": personalInfo2 } = Data;
   return (
     <main>
       <section className='about-content-info'>
         <div className='about-content-left'>
-          <h1 className='about-title'>Infos personelles</h1>
+          <h1 className='about-title'>Infos personnelles</h1>
           <div className='personal-infos'>
             <div className='personal-info-1'>
-              <div className='info'>
-                <h2>Nom :</h2>
-                <span>Martin</span>
-              </div>
-              <div className='info'>
-                <h2>Prénom :</h2>
-                <span>Florian</span>
-              </div>
-              <div className='info'>
-                <h2>Age :</h2>
-                <p>25 ans</p>
-              </div>
-              <div className='info'>
-                <h2>Nationalité :</h2>
-                <p>Française</p>
-              </div>
+              {personalInfo1.map((item, index) => (
+                <div className="info" key={index}>
+                  <h2>{item.label} :</h2>
+                  <p>{item.value}</p>
+                </div>
+              ))}
             </div>
-            <div className='personal-info-2'>
-              <div className='info'>
-                <h2>Freelance :</h2>
-                <p>Disponible</p>
+            <div className='personal-info-1'>
+            {personalInfo2.map((item, index) => (
+              <div className="info personal-info-2" key={index}>
+                <h2>{item.label} :</h2>
+                <p>{item.value}</p>
               </div>
-              <div className='info'>
-                <h2>Address :</h2>
-                <p>Paris</p>
-              </div>
-              <div className='info'>
-                <h2>Email :</h2>
-                <span>florian.martin700@gmail.com</span>
-              </div>
-              <div className='info'>
-                <h2>Langages :</h2>
-                <p>Français, Anglais "A2"</p>
-              </div>
+            ))}
             </div>
           </div>
         </div>
@@ -58,7 +40,7 @@ function about() {
           </div>
           <div className='content-right'>
             <h2>9 +</h2>
-            <p>Projet terminé</p>
+            <p>Projets terminés</p>
           </div>
         </div>
       </section>

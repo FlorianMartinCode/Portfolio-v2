@@ -107,6 +107,7 @@
 }
 .about-content-info .about-content-left .personal-infos {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   gap: 20px;
   padding: 25px 0;
@@ -133,6 +134,7 @@
 .about-content-info .about-content-right .content-right {
   padding: 30px 10px;
   width: 125px;
+  transition: box-shadow 0.3s;
 }
 .about-content-info .about-content-right .content-right h2 {
   width: 40px;
@@ -141,6 +143,9 @@
 .about-content-info .about-content-right .content-right p {
   margin-top: 8px;
   text-align: center;
+}
+.about-content-info .about-content-right .content-right:hover {
+  box-shadow: 0 0 20px #209cee;
 }
 
 .btn-download-cv {
@@ -175,10 +180,6 @@
   width: 60px;
   height: auto;
   border-radius: 50%;
-  transition: box-shadow 0.3s;
-}
-.about-content-collapse .home-icon img:hover {
-  box-shadow: 0 0 20px #209cee;
 }
 
 @media screen and (max-width: 1024px) {

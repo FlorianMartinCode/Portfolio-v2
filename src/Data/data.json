@@ -1,0 +1,38 @@
+{
+  "personal-info-1": [
+    {
+      "label": "Nom",
+      "value": "Martin"
+    },
+    {
+      "label": "Prénom",
+      "value": "Florian"
+    },
+    {
+      "label": "Age",
+      "value": "25 ans"
+    },
+    {
+      "label": "Nationalité",
+      "value": "Française"
+    }
+  ],
+  "personal-info-2": [
+    {
+      "label": "Freelance",
+      "value": "Disponible"
+    },
+    {
+      "label": "Address",
+      "value": "Paris"
+    },
+    {
+      "label": "Email",
+      "value": "florian.martin700@gmail.com"
+    },
+    {
+      "label": "Langages",
+      "value": "Français, Anglais"
+    }
+  ]
+}
