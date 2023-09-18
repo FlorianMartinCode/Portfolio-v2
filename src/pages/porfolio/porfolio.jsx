@@ -1,9 +1,13 @@
-import React from 'react'
+import React from 'react';
+import Slider from '../../components/main/Slider/slider';
 
-function porfolio() {
+function Portfolio() {
+
   return (
-    <main>porfolio</main>
-  )
+    <div>
+      <Slider />
+    </div>
+  );
 }
 
-export default porfolio
+export default Portfolio;

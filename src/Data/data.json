@@ -34,5 +34,49 @@
       "label": "Langages",
       "value": "Français, Anglais"
     }
-  ]
+  ],
+  "portfolio-data": [
+    {
+      "id": 1,
+      "title": "Riding Cities",
+      "cover": "",
+      "url": "https://florianmartincode.github.io/RidingCities/"
+    },
+    {
+      "id": 2,
+      "title": "Booki",
+      "cover": "",
+      "url": "https://florianmartincode.github.io/Booki/#"
+    },
+    {
+      "id": 3,
+      "title": "OhMyFood",
+      "cover": "",
+      "url": "https://florianmartincode.github.io/OhMyFood/"
+    },
+    {
+      "id": 4,
+      "title": "PrintIt",
+      "cover": "",
+      "url": "https://florianmartincode.github.io/PrintIt/"
+    },
+    {
+      "id": 5,
+      "title": "Portfolio Sophie Bluel",
+      "cover": "",
+      "url": "https://florianmartincode.github.io/PortfolioArchitecteSophieBluel/"
+    },
+    {
+      "id": 6,
+      "title": "Kasa",
+      "cover": "",
+      "url": "https://florianmartincode.github.io/Kasa/"
+    },
+    {
+      "id": 7,
+      "title": "Nina Carducci",
+      "cover": "",
+      "url": "https://florianmartincode.github.io/NinaCarducci/"
+    }
+  ]  
 }
