@@ -27,10 +27,6 @@ function Navbar() {
               <NavLink to='/portfolio'>
                 <i className="fa-solid fa-folder"></i>Portfolio</NavLink>
             </li>
-            <li>
-              <NavLink to='/contact'>
-                <i className="fa-solid fa-envelope"></i>Contact</NavLink>
-            </li>
           </ul>
         </div> 
         <label className="theme-switch">

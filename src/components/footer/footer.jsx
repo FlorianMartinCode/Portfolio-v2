@@ -9,6 +9,7 @@ function Footer() {
 
   return (
     <footer className='footer-content'>
+      <Link to="mailto:florian.martin700@gmail.com" className='btn-about'>Contact</Link>
       <div className='footer-link'>
         <Link to="https://www.linkedin.com/in/florian-martin-477748266/" target="_blank" rel="noreferrer">
           <img src={LinkedIn} alt="logo linkedin" />

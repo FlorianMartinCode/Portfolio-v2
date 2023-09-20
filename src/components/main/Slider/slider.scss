@@ -1,0 +1,20 @@
+.slider {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    
+    button {
+        width: 5%;
+        font-size: 50px;
+        // height: 50px;
+        align-items: center;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .cover {
+        padding: 50px;
+    }
+}
+

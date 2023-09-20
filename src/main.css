@@ -3,7 +3,7 @@
 .home-content {
   display: flex;
   justify-content: space-around;
-  padding: 80px 0 150px 0;
+  padding: 80px 0 46px 0;
 }
 .home-content .home-pdp {
   align-items: center;
@@ -104,6 +104,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  padding-bottom: 100px;
 }
 .about-content-info .about-content-left .personal-infos {
   display: flex;
@@ -146,25 +147,6 @@
 }
 .about-content-info .about-content-right .content-right:hover {
   box-shadow: 0 0 20px #209cee;
-}
-
-.btn-download-cv {
-  text-transform: uppercase;
-  font-weight: bold;
-  border: 1px solid #209cee;
-  padding: 10px 20px;
-  max-width: 200px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin: 30px auto;
-  background-color: transparent;
-  transition: background-color 0.5s ease;
-  cursor: pointer;
-  margin: 94px auto 70px auto;
-}
-.btn-download-cv:hover {
-  background-color: #209cee;
 }
 
 .about-content-collapse {
@@ -350,8 +332,27 @@ nav .theme-switch .theme-switch:hover i {
     transform: translateX(21px) !important;
   }
 }
-.footer-content .footer-link {
+.footer-content {
   border-top: 1px solid rgba(211, 211, 211, 0.4745098039);
+}
+.footer-content .btn-about {
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 1px solid #209cee;
+  padding: 10px 20px;
+  max-width: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 30px auto;
+  background-color: transparent;
+  transition: background-color 0.5s ease;
+  cursor: pointer;
+}
+.footer-content .btn-about:hover {
+  background-color: #209cee;
+}
+.footer-content .footer-link {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -419,6 +420,23 @@ nav .theme-switch .theme-switch:hover i {
     font-size: 20px;
   }
 }
+.slider {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.slider button {
+  width: 5%;
+  font-size: 50px;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.slider .cover {
+  padding: 50px;
+}
+
 /* Thème sombre */
 .dark-theme {
   background-color: #333;

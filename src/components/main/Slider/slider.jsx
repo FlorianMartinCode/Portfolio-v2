@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import data from '../../../Data/data.json';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
 function Slider() {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -20,16 +22,19 @@ function Slider() {
     };
 
     return (
-        <div className="slider">
-            <button onClick={prevSlide}>Précédent</button>
-            <div>
+        <section className="slider">
+            <button onClick={prevSlide}>
+                <FontAwesomeIcon icon={faChevronLeft} />
+            </button>
+            <div className='slider-link'>
                 <Link to={Project.url} target="_blank" rel="noopener noreferrer">
-                    <img src={Project.cover} alt={Project.title} />
-                    <h1>{Project.title}</h1>
+                    <img className='cover' src={Project.cover} alt={Project.title} />
                 </Link>
             </div>
-            <button onClick={nextSlide}>Suivant</button>
-        </div>
+            <button onClick={nextSlide}>
+                <FontAwesomeIcon icon={faChevronRight} />
+            </button>
+        </section>
     );
 }
 

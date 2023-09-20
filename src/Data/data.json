@@ -39,44 +39,51 @@
     {
       "id": 1,
       "title": "Riding Cities",
-      "cover": "",
-      "url": "https://florianmartincode.github.io/RidingCities/"
+      "cover": "https://i.goopics.net/b6d5gc.png",
+      "url": "https://florianmartincode.github.io/RidingCities/",
+      "alt": "Image de couverture pour Riding Cities"
     },
     {
       "id": 2,
       "title": "Booki",
-      "cover": "",
-      "url": "https://florianmartincode.github.io/Booki/#"
+      "cover": "https://i.goopics.net/s8il8f.png",
+      "url": "https://florianmartincode.github.io/Booki/#",
+      "alt": "Image de couverture pour Booki"
     },
     {
       "id": 3,
       "title": "OhMyFood",
-      "cover": "",
-      "url": "https://florianmartincode.github.io/OhMyFood/"
+      "cover": "https://i.goopics.net/28t6fb.png",
+      "url": "https://florianmartincode.github.io/OhMyFood/",
+      "alt": "Image de couverture pour OhMyFood"
     },
     {
       "id": 4,
       "title": "PrintIt",
-      "cover": "",
-      "url": "https://florianmartincode.github.io/PrintIt/"
+      "cover": "https://i.goopics.net/q4pm5l.png",
+      "url": "https://florianmartincode.github.io/PrintIt/",
+      "alt": "Image de couverture pour PrintIt"
     },
     {
       "id": 5,
       "title": "Portfolio Sophie Bluel",
-      "cover": "",
-      "url": "https://florianmartincode.github.io/PortfolioArchitecteSophieBluel/"
+      "cover": "https://i.goopics.net/g5cle0.png",
+      "url": "https://github.com/FlorianMartinCode/PortfolioArchitecteSophieBluel",
+      "alt": "Image de couverture pour Portfolio Sophie Bluel"
     },
     {
       "id": 6,
       "title": "Kasa",
-      "cover": "",
-      "url": "https://florianmartincode.github.io/Kasa/"
+      "cover": "https://i.goopics.net/l23ady.png",
+      "url": "https://florianmartincode.github.io/Kasa/",
+      "alt": "Image de couverture pour Kasa"
     },
     {
       "id": 7,
       "title": "Nina Carducci",
-      "cover": "",
-      "url": "https://florianmartincode.github.io/NinaCarducci/"
+      "cover": "https://i.goopics.net/ckfw95.png",
+      "url": "https://florianmartincode.github.io/NinaCarducci/",
+      "alt": "Image de couverture pour Nina Carducci"
     }
   ]  
 }

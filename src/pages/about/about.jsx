@@ -44,9 +44,6 @@ function about() {
           </div>
         </div>
       </section>
-      <div className='btn-download-cv'>
-        <a href="/chemin-vers-votre-fichier.pdf" download>Télécharger CV</a>
-      </div>
       <section className='about-content-collapse'>
         <Collapse title="Compétences"
           content={
