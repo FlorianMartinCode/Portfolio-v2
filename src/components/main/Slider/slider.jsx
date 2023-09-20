@@ -23,15 +23,15 @@ function Slider() {
 
     return (
         <section className="slider">
-            <button onClick={prevSlide}>
-                <FontAwesomeIcon icon={faChevronLeft} />
-            </button>
             <div className='slider-link'>
                 <Link to={Project.url} target="_blank" rel="noopener noreferrer">
                     <img className='cover' src={Project.cover} alt={Project.title} />
                 </Link>
             </div>
-            <button onClick={nextSlide}>
+            <button className='btn-left' onClick={prevSlide}>
+                <FontAwesomeIcon icon={faChevronLeft} />
+            </button>
+            <button className='btn-right' onClick={nextSlide}>
                 <FontAwesomeIcon icon={faChevronRight} />
             </button>
         </section>
