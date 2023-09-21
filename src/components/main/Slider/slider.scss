@@ -7,19 +7,20 @@
             height: 500px;
             display: block;
             position: relative;
-            object-position: top;
+            object-position: center -20px;
         }
     }
 
     button.btn-left,
     button.btn-right {
         position: absolute;
-        top: 300px;
-        font-size: 100px;
+        top: 330px;
+        font-size: 80px;
         background: none;
         border: none;
         cursor: pointer;
         transition: color 0.3s;
+        color: #000;
     }
 
     button.btn-left:hover,
@@ -36,3 +37,40 @@
         right: 5%; 
     }
 }
+
+@media screen and (max-width: 1024px) {
+    .slider {
+        .slider-link {
+            .cover {
+                width: 100%;
+                height: 200px;
+                object-position: center;
+            }
+        }
+    
+        button.btn-left,
+        button.btn-right {
+            top: 180px;
+            font-size: 50px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .slider {
+        .slider-link {
+            .cover {
+                width: 100%;
+                height: 200px;
+                object-position: center;
+            }
+        }
+    
+        button.btn-left,
+        button.btn-right {
+            top: 230px;
+            font-size: 50px;
+        }
+    }
+}
+

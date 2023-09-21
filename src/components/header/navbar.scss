@@ -57,7 +57,7 @@ nav {
     input:checked + .slider {
       background-color: #209cee;
       &::before {
-        transform: translateX(25px);
+        transform: translateX(23px);
       }
     }
   
@@ -75,13 +75,14 @@ nav {
       &::before {
         position: absolute;
         content: "";
-        width: 20px;
-        height: 20px;
-        left: 1px;
-        top: 2.5px;
+        width: 25px;
+        height: 23px;
+        left: -2px;
+        top: 0;
         background-color: #fff;
         transition: 0.4s;
         border-radius: 50px;
+        border: #000 1px solid;
       }
   
       i {
@@ -89,7 +90,6 @@ nav {
         top: 50%;
         transform: translateY(-50%);
         font-size: 20px;
-        color: #fff;
         transition: 0.4s;
         color: #000;
       }
@@ -103,7 +103,7 @@ nav {
       i.fa-sun {
         left: 1px;
         opacity: 1;
-        font-size: 16px;
+        // font-size: 16px;
       }
   
       i.fa-moon {
@@ -144,12 +144,6 @@ nav {
     .theme-switch {
       margin: 13px 10px 0 0;
       padding: 10px 15px;
-
-      input:checked + .slider {
-        &::before {
-          transform: translateX(21px);
-        }
-      }
     }
   }
 }
