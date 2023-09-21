@@ -74,6 +74,7 @@
 
 @media screen and (max-width: 1024px) {
     .about-content-info {
+        padding-bottom: 50px;
         .about-content-left {
             .personal-infos {
                 flex-direction: column;
@@ -105,6 +106,7 @@
         text-align: center;
         display: flex;
         justify-content: center;
+        padding-bottom: 0px;
 
         .about-content-left {
             margin-top: 25px;

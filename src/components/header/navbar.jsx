@@ -31,7 +31,9 @@ function Navbar() {
         </div> 
         <label className="theme-switch">
           <input name="checkbox" type="checkbox" onChange={toggleTheme} checked={darkTheme} />
-          <span className="slider"></span>
+          <span className="slider">
+            <i className={`fa-solid ${darkTheme ? 'fa-moon' : 'fa-sun'}`}></i>
+          </span>
         </label>
       </nav>
     </header>

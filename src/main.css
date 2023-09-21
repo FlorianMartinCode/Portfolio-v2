@@ -77,6 +77,7 @@
   .home-content {
     display: flex;
     flex-direction: column;
+    padding: 0;
   }
   .home-content .home-pdp {
     margin: auto;
@@ -165,6 +166,9 @@
 }
 
 @media screen and (max-width: 1024px) {
+  .about-content-info {
+    padding-bottom: 50px;
+  }
   .about-content-info .about-content-left .personal-infos {
     flex-direction: column;
     gap: 0;
@@ -190,6 +194,7 @@
     text-align: center;
     display: flex;
     justify-content: center;
+    padding-bottom: 0px;
   }
   .about-content-info .about-content-left {
     margin-top: 25px;
@@ -270,10 +275,10 @@ nav .theme-switch {
   font-size: 25px;
 }
 nav .theme-switch input:checked + .slider {
-  background-color: #209cee !important;
+  background-color: #209cee;
 }
 nav .theme-switch input:checked + .slider::before {
-  transform: translateX(25px) !important;
+  transform: translateX(25px);
 }
 nav .theme-switch .slider {
   position: absolute;
@@ -297,8 +302,28 @@ nav .theme-switch .slider::before {
   transition: 0.4s;
   border-radius: 50px;
 }
-nav .theme-switch .theme-switch:hover i {
-  color: #209cee;
+nav .theme-switch .slider i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #fff;
+  transition: 0.4s;
+  color: #000;
+}
+nav .theme-switch .slider i.fa-sun,
+nav .theme-switch .slider i.fa-moon {
+  width: 20px;
+  text-align: center;
+}
+nav .theme-switch .slider i.fa-sun {
+  left: 1px;
+  opacity: 1;
+  font-size: 16px;
+}
+nav .theme-switch .slider i.fa-moon {
+  left: calc(100% - 20px - 2px);
+  opacity: 1;
 }
 
 @media screen and (max-width: 768px) {
@@ -329,7 +354,7 @@ nav .theme-switch .theme-switch:hover i {
     padding: 10px 15px;
   }
   nav .theme-switch input:checked + .slider::before {
-    transform: translateX(21px) !important;
+    transform: translateX(21px);
   }
 }
 .footer-content {
@@ -357,7 +382,6 @@ nav .theme-switch .theme-switch:hover i {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding-top: 21px;
 }
 .footer-content .footer-link a {
   margin: 0 30px;
