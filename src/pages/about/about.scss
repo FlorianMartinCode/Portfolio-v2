@@ -35,11 +35,12 @@
         justify-content: space-between;
         padding: 15px;
         gap: 15px;
+        background-image: url('https://i.goopics.net/9i6waf.png');
 
         .content-right {
             padding: 30px 10px;
             width: 125px;
-            transition: box-shadow 0.3s;
+            box-shadow: 0 0 20px #209cee;
 
             h2 {
                 width: 40px;
@@ -49,9 +50,6 @@
                 margin-top: 8px;
                 text-align: center;
             }
-        }
-        .content-right:hover {
-            box-shadow: 0 0 20px #209cee;
         }
     }
 }

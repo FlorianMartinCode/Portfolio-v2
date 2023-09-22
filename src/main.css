@@ -132,11 +132,12 @@
   justify-content: space-between;
   padding: 15px;
   gap: 15px;
+  background-image: url("https://i.goopics.net/9i6waf.png");
 }
 .about-content-info .about-content-right .content-right {
   padding: 30px 10px;
   width: 125px;
-  transition: box-shadow 0.3s;
+  box-shadow: 0 0 20px #209cee;
 }
 .about-content-info .about-content-right .content-right h2 {
   width: 40px;
@@ -145,9 +146,6 @@
 .about-content-info .about-content-right .content-right p {
   margin-top: 8px;
   text-align: center;
-}
-.about-content-info .about-content-right .content-right:hover {
-  box-shadow: 0 0 20px #209cee;
 }
 
 .about-content-collapse {
@@ -506,6 +504,7 @@ nav .theme-switch .slider i.fa-moon {
 .dark-theme .about-content-right,
 .dark-theme .content-right {
   border: 2px solid rgba(211, 211, 211, 0.089);
+  background-color: #333;
 }
 .dark-theme .about-content-right h2,
 .dark-theme .content-right h2 {
@@ -524,6 +523,7 @@ nav .theme-switch .slider i.fa-moon {
 .light-theme .about-content-right,
 .light-theme .content-right {
   border: 2px solid rgba(211, 211, 211, 0.4745098039);
+  background-color: #fff;
 }
 .light-theme .about-content-right h2,
 .light-theme .content-right h2 {

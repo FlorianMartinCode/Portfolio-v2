@@ -56,7 +56,7 @@ function about() {
           </figure>
           }
         />
-        <Collapse title="Diplômes" content="Diplome à venir" />
+        <Collapse title="Diplômes" content="« Développeur intégrateur web » enregistrée au Répertoire National des Certifications Professionnelles, de niveau 5 (bac +2) sur les cadres français et européens des certifications (European Qualifications Framework)." />
       </section>
     </main>
   )
