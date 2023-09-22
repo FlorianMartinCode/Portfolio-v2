@@ -1,6 +1,7 @@
 .slider {
     .slider-link {
         text-align: center;
+        position: relative;
 
         .cover {
             width: 100%;
@@ -16,25 +17,51 @@
         position: absolute;
         top: 310px;
         font-size: 80px;
-        background: none;
+        background: #00000096;
         border: none;
         cursor: pointer;
         transition: color 0.3s;
-        color: #000;
+        color: #fff;
     }
 
     button.btn-left:hover,
     button.btn-right:hover {
         color: #209cee;
-        transform: scale(1.2);
     }
 
     button.btn-left {
         left: 5%;
+        padding: 5px 0 0 5px;
     }
     
     button.btn-right {
         right: 5%; 
+        padding: 5px 5px 0 0;
+    }
+
+    .bulletpoints {
+        position: absolute;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        top: 560px;
+    
+        li {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #fff;
+            margin: 0 5px;
+            border: 1px solid #000;
+            cursor: pointer;
+            transition: background-color 0.3s;
+    
+            &.active {
+                background-color: #209cee;
+                transform: scale(1.2);
+            }
+        }
     }
 }
 
@@ -53,8 +80,13 @@
             top: 180px;
             font-size: 50px;
         }
+
+        .bulletpoints {
+            top: 270px;
+        }
     }
 }
+
 
 @media screen and (max-width: 768px) {
     .slider {
@@ -70,6 +102,10 @@
         button.btn-right {
             top: 230px;
             font-size: 50px;
+        }
+
+        .bulletpoints {
+            top: 320px;
         }
     }
 }

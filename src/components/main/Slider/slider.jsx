@@ -40,6 +40,15 @@ function Slider() {
             <button className='btn-right' onClick={nextSlide}>
                 <FontAwesomeIcon icon={faChevronRight} />
             </button>
+            <ul className='bulletpoints'>
+                {portfolioData.map((item, index) => (
+                    <li
+                        key={index}
+                        className={index === currentIndex ? 'active' : ''}
+                        onClick={() => setCurrentIndex(index)}
+                    />
+                ))}
+            </ul>
         </section>
     );
 }

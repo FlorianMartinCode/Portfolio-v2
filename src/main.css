@@ -437,6 +437,7 @@ nav .theme-switch .slider i.fa-moon {
 }
 .slider .slider-link {
   text-align: center;
+  position: relative;
 }
 .slider .slider-link .cover {
   width: 100%;
@@ -450,22 +451,45 @@ nav .theme-switch .slider i.fa-moon {
   position: absolute;
   top: 310px;
   font-size: 80px;
-  background: none;
+  background: rgba(0, 0, 0, 0.5882352941);
   border: none;
   cursor: pointer;
   transition: color 0.3s;
-  color: #000;
+  color: #fff;
 }
 .slider button.btn-left:hover,
 .slider button.btn-right:hover {
   color: #209cee;
-  transform: scale(1.2);
 }
 .slider button.btn-left {
   left: 5%;
+  padding: 5px 0 0 5px;
 }
 .slider button.btn-right {
   right: 5%;
+  padding: 5px 5px 0 0;
+}
+.slider .bulletpoints {
+  position: absolute;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  top: 560px;
+}
+.slider .bulletpoints li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin: 0 5px;
+  border: 1px solid #000;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.slider .bulletpoints li.active {
+  background-color: #209cee;
+  transform: scale(1.2);
 }
 
 @media screen and (max-width: 1024px) {
@@ -479,6 +503,9 @@ nav .theme-switch .slider i.fa-moon {
     top: 180px;
     font-size: 50px;
   }
+  .slider .bulletpoints {
+    top: 270px;
+  }
 }
 @media screen and (max-width: 768px) {
   .slider .slider-link .cover {
@@ -490,6 +517,9 @@ nav .theme-switch .slider i.fa-moon {
   .slider button.btn-right {
     top: 230px;
     font-size: 50px;
+  }
+  .slider .bulletpoints {
+    top: 320px;
   }
 }
 /* Thème sombre */
