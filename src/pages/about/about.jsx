@@ -56,7 +56,7 @@ function about() {
           </figure>
           }
         />
-        <Collapse title="Diplômes" content="Lien du diplome à venir" />
+        <Collapse title="Diplômes" content="Diplome à venir" />
       </section>
     </main>
   )

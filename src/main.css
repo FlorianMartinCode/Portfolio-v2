@@ -3,7 +3,7 @@
 .home-content {
   display: flex;
   justify-content: space-around;
-  padding: 80px 0 46px 0;
+  padding: 80px 0 100px 0;
 }
 .home-content .home-pdp {
   align-items: center;
@@ -105,7 +105,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding-bottom: 100px;
+  padding-bottom: 118px;
 }
 .about-content-info .about-content-left .personal-infos {
   display: flex;
@@ -217,12 +217,9 @@
   .about-content-info .about-content-right {
     display: none;
   }
-  .btn-download-cv {
-    margin: auto;
-  }
-  .about-content-collapse .home-icon img {
-    width: 35px;
-    height: auto;
+  .about-content-collapse .home-icon {
+    flex-wrap: wrap;
+    gap: 30px;
   }
 }
 nav {
@@ -453,7 +450,7 @@ nav .theme-switch .slider i.fa-moon {
 .slider button.btn-left,
 .slider button.btn-right {
   position: absolute;
-  top: 330px;
+  top: 310px;
   font-size: 80px;
   background: none;
   border: none;

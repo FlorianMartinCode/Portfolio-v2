@@ -4,7 +4,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding-bottom: 100px;
+    padding-bottom: 118px;
 
     .about-content-left {
         .personal-infos {
@@ -130,11 +130,8 @@
             display: none;
         }
     }
-    .btn-download-cv {
-        margin: auto;
-    }
-    .about-content-collapse .home-icon img {
-        width: 35px;
-        height: auto;
+    .about-content-collapse .home-icon{
+        flex-wrap: wrap;
+        gap: 30px;
     }
 }

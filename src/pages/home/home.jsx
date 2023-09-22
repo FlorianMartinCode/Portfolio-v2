@@ -24,7 +24,7 @@ function Home() {
         </figure>
         <div className='home-text-et-btn'>
           <h1 className='home-titre'>Florian Martin <span id="dynamic-title">{dynamicTitles[currentIndex]}</span></h1>
-          <p className='home-description'>Je suis un développeur front-end junior passionné par l'apprentissage et la création de sites web innovants. Mon objectif est de développer mes compétences et de contribuer à des projets web excitants tout en acquérant de l'expérience dans le domaine du développement front-end.</p>
+          <p className='home-description'>Je suis un développeur front-end junior passionné par l'apprentissage et la création de sites web innovants. Mon objectif est de développer mes compétences et de contribuer à des projets web excitants tout en acquérant de l'expérience dans le domaine du développement.</p>
           <Link to="/about" className='btn-about'>À propos</Link>
         </div>
       </div>
