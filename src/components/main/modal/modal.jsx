@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Modal({ isOpen, onClose, imageUrl, altText, description }) {
+function Modal({ isOpen, onClose, imageUrl, altText, description}) {
     const stopPropagation = (e) => {
         e.stopPropagation();
     };
@@ -10,7 +10,7 @@ function Modal({ isOpen, onClose, imageUrl, altText, description }) {
             <div className="modal-content" onClick={stopPropagation}>
                 <span className="close-button" onClick={onClose}>&times;</span>
                 <img src={imageUrl} alt={altText} />
-                <p>{description}</p>
+                <p className="modal-description">{description}</p>
             </div>
         </div>
     );

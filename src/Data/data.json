@@ -38,6 +38,7 @@
   "portfolio-data": [
     {
       "id": 1,
+      "category": "OpenClassrooms",
       "title": "Riding Cities",
       "cover": "https://i.goopics.net/ypkxl2.png",
       "url": "https://florianmartincode.github.io/RidingCities/",
@@ -45,6 +46,7 @@
     },
     {
       "id": 2,
+      "category": "OpenClassrooms",
       "title": "Booki",
       "cover": "https://i.goopics.net/a1hl3n.png",
       "url": "https://florianmartincode.github.io/Booki/#",
@@ -52,6 +54,7 @@
     },
     {
       "id": 3,
+      "category": "OpenClassrooms",
       "title": "OhMyFood",
       "cover": "https://i.goopics.net/nfo43v.png",
       "url": "https://florianmartincode.github.io/OhMyFood/",
@@ -59,6 +62,7 @@
     },
     {
       "id": 4,
+      "category": "OpenClassrooms",
       "title": "PrintIt",
       "cover": "https://i.goopics.net/15qn1e.png",
       "url": "https://florianmartincode.github.io/PrintIt/",
@@ -66,6 +70,7 @@
     },
     {
       "id": 5,
+      "category": "OpenClassrooms",
       "title": "Portfolio Sophie Bluel",
       "cover": "https://i.goopics.net/pt9edx.png",
       "url": "https://github.com/FlorianMartinCode/PortfolioArchitecteSophieBluel",
@@ -73,6 +78,7 @@
     },
     {
       "id": 6,
+      "category": "OpenClassrooms",
       "title": "Kasa",
       "cover": "https://i.goopics.net/ss1s8r.png",
       "url": "https://florianmartincode.github.io/Kasa/",
@@ -80,6 +86,7 @@
     },
     {
       "id": 7,
+      "category": "OpenClassrooms",
       "title": "Nina Carducci",
       "cover": "https://i.goopics.net/dl7qk9.png",
       "url": "https://florianmartincode.github.io/NinaCarducci/",

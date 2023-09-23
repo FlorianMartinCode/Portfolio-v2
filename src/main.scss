@@ -2,7 +2,6 @@
 @import './pages/home/home.scss';
 @import './pages/about/about.scss';
 @import './pages/porfolio/portfolio.scss';
-@import './pages/contact/contact.scss';
 
 // Styles components
 @import './components/header/navbar.scss';
@@ -10,6 +9,7 @@
 @import './components/main/collapse/collapse.scss';
 @import './components/main/Slider/slider.scss';
 @import './components/main/modal/modal.scss';
+@import './components/main/card/card.scss';
 
 // Thèmes
 @import './themes/themes.scss';

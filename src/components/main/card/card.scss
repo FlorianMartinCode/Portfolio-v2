@@ -1,0 +1,32 @@
+.card-link {
+    width: 40%;
+    border-radius: 4px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.493);
+    cursor: pointer;
+  
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+  
+    h3 {
+      margin-top: 10px;
+      font-size: 18px;
+      text-align: center;
+    }
+
+    &:hover {
+        background-color: #209cee;
+        color: #fff;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card-link {
+        width: 80%;
+        margin: auto;
+    }
+}
+  

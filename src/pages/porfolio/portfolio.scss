@@ -1,0 +1,22 @@
+.card-container {
+    text-align: center;
+    padding-top: 50px;
+    margin: 30px ;
+    position: relative;
+    border-top: 1px solid rgba(211, 211, 211, 0.4745098039);
+    
+    .cards-all {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+        padding-top: 50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card-container .cards-all {
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -26,6 +26,19 @@
         padding: 20px;
         border-radius: 4px;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        
+        .modal-title {
+            margin-bottom: 15px;
+          }
+          
+          .modal-description {
+            margin-bottom: 15px;
+          }
+          
+          .modal-url {
+            font-size: 14px;
+            color: #007bff;
+          }
     }
 
     .close-button {
