@@ -4,6 +4,7 @@
     margin: 30px ;
     position: relative;
     border-top: 1px solid rgba(211, 211, 211, 0.4745098039);
+    animation: slideInBottom 1s ease forwards;
     
     .cards-all {
         display: flex;
@@ -11,6 +12,16 @@
         flex-wrap: wrap;
         gap: 30px;
         padding-top: 50px;
+    }
+}
+@keyframes slideInBottom {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
     }
 }
 

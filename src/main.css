@@ -174,7 +174,7 @@
 .about-content-collapse {
   display: flex;
   flex-direction: row;
-  animation: slideInBottom 1.5s ease forwards;
+  animation: slideInBottom 2s ease forwards;
 }
 .about-content-collapse .home-icon {
   display: flex;
@@ -191,10 +191,6 @@
 @keyframes slideInBottom {
   0% {
     transform: translateY(100%);
-    opacity: 0;
-  }
-  50% {
-    transform: translateY(50%);
     opacity: 0;
   }
   100% {
@@ -277,6 +273,7 @@
   margin: 30px;
   position: relative;
   border-top: 1px solid rgba(211, 211, 211, 0.4745098039);
+  animation: slideInBottom 1s ease forwards;
 }
 .card-container .cards-all {
   display: flex;
@@ -286,6 +283,16 @@
   padding-top: 50px;
 }
 
+@keyframes slideInBottom {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 @media screen and (max-width: 768px) {
   .card-container .cards-all {
     display: flex;

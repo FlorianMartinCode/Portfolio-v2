@@ -78,7 +78,7 @@
 .about-content-collapse {
     display: flex;
     flex-direction: row;
-    animation: slideInBottom 1.5s ease forwards;
+    animation: slideInBottom 2s ease forwards;
 
     .home-icon {
         display: flex;
@@ -96,10 +96,6 @@
 @keyframes slideInBottom {
     0% {
         transform: translateY(100%);
-        opacity: 0;
-    }
-    50% {
-        transform: translateY(50%);
         opacity: 0;
     }
     100% {
