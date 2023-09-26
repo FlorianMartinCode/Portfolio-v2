@@ -11,7 +11,6 @@
   justify-content: center;
   padding: 50px 0;
   border-radius: 50%;
-  border: 10px solid #209cee;
   max-width: 350px;
   width: 100%;
   max-height: 300px;
@@ -107,6 +106,9 @@
   justify-content: space-around;
   padding-bottom: 118px;
 }
+.about-content-info .about-content-left {
+  animation: slideInLeft 1s ease forwards;
+}
 .about-content-info .about-content-left .personal-infos {
   display: flex;
   flex-direction: row;
@@ -127,12 +129,23 @@
   font-size: 20px;
   margin: 0 5px;
 }
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 .about-content-info .about-content-right {
   display: flex;
   justify-content: space-between;
   padding: 15px;
   gap: 15px;
   background-image: url("https://i.goopics.net/9i6waf.png");
+  animation: slideInRight 1s ease forwards;
 }
 .about-content-info .about-content-right .content-right {
   padding: 30px 10px;
@@ -147,10 +160,21 @@
   margin-top: 8px;
   text-align: center;
 }
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 
 .about-content-collapse {
   display: flex;
   flex-direction: row;
+  animation: slideInBottom 1.5s ease forwards;
 }
 .about-content-collapse .home-icon {
   display: flex;
@@ -164,9 +188,35 @@
   cursor: pointer;
 }
 
+@keyframes slideInBottom {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 @media screen and (max-width: 1024px) {
   .about-content-info {
     padding-bottom: 50px;
+  }
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(0);
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      transform: translateY(0);
+      opacity: 1;
+    }
   }
   .about-content-info .about-content-left .personal-infos {
     flex-direction: column;

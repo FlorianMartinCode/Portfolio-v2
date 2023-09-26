@@ -7,6 +7,7 @@
     padding-bottom: 118px;
 
     .about-content-left {
+        animation: slideInLeft 1s ease forwards;
         .personal-infos {
             display: flex;
             flex-direction: row;
@@ -30,12 +31,23 @@
             }
         }
     }
+    @keyframes slideInLeft {
+        from {
+            transform: translateX(-100%);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
     .about-content-right {
         display: flex;
         justify-content: space-between;
         padding: 15px;
         gap: 15px;
         background-image: url('https://i.goopics.net/9i6waf.png');
+        animation: slideInRight 1s ease forwards;
 
         .content-right {
             padding: 30px 10px;
@@ -52,10 +64,21 @@
             }
         }
     }
+    @keyframes slideInRight {
+        from {
+            transform: translateX(100%);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
 }
 .about-content-collapse {
     display: flex;
     flex-direction: row;
+    animation: slideInBottom 1.5s ease forwards;
 
     .home-icon {
         display: flex;
@@ -70,11 +93,37 @@
         }
     }
 }
+@keyframes slideInBottom {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(50%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
 
 @media screen and (max-width: 1024px) {
     .about-content-info {
         padding-bottom: 50px;
         .about-content-left {
+            @keyframes slideInLeft {
+                from {
+                    transform: translateX(0);
+                    transform: translateY(100%);
+                    opacity: 0;
+                }
+                to {
+                    transform: translateX(0);
+                    transform: translateY(0);
+                    opacity: 1;
+                }
+            }
             .personal-infos {
                 flex-direction: column;
                 gap: 0;
