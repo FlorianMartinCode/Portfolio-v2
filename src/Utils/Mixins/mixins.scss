@@ -1,18 +1,43 @@
 @mixin button {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin: auto;
+  padding: 19px 22px;
+  transition: all .2s ease;
+  width: 180px;
+
+  span {
+    position: relative;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 900;
+    letter-spacing: .25em;
     text-transform: uppercase;
-    font-weight: bold;
-    border: 1px solid #209cee;
-    padding: 10px 20px;
-    max-width: 200px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 30px auto;
-    background-color: transparent;
-    transition: background-color 0.5s ease;
-    cursor: pointer;
-  
-    &:hover {
-      background-color: #209cee;
+    vertical-align: middle;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 26px;
+    display: block;
+    border-radius: 28px;
+    background: #5fb2e4;
+    width: 25px;
+    height: 25px;
+    transition: all .3s ease;
+  }
+
+  &:hover {
+    &:before {
+      width: 70%;
+      background: #5fb2e4;
     }
+  }
+
+  &:active {
+    transform: scale(.96);
+  }
 }

@@ -55,21 +55,41 @@
   line-height: 2;
 }
 .home-content .home-text-et-btn .btn-about {
-  text-transform: uppercase;
-  font-weight: bold;
-  border: 1px solid #209cee;
-  padding: 10px 20px;
-  max-width: 200px;
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  margin: 30px auto;
-  background-color: transparent;
-  transition: background-color 0.5s ease;
-  cursor: pointer;
+  position: relative;
+  margin: auto;
+  padding: 19px 22px;
+  transition: all 0.2s ease;
+  width: 180px;
 }
-.home-content .home-text-et-btn .btn-about:hover {
-  background-color: #209cee;
+.home-content .home-text-et-btn .btn-about span {
+  position: relative;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 900;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+.home-content .home-text-et-btn .btn-about:before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 26px;
+  display: block;
+  border-radius: 28px;
+  background: #5fb2e4;
+  width: 25px;
+  height: 25px;
+  transition: all 0.3s ease;
+}
+.home-content .home-text-et-btn .btn-about:hover:before {
+  width: 70%;
+  background: #5fb2e4;
+}
+.home-content .home-text-et-btn .btn-about:active {
+  transform: scale(0.96);
 }
 
 @media screen and (max-width: 1024px) {
@@ -431,21 +451,41 @@ nav .theme-switch .slider i.fa-moon {
   border-top: 1px solid rgba(211, 211, 211, 0.4745098039);
 }
 .footer-content .btn-about {
-  text-transform: uppercase;
-  font-weight: bold;
-  border: 1px solid #209cee;
-  padding: 10px 20px;
-  max-width: 200px;
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  margin: 30px auto;
-  background-color: transparent;
-  transition: background-color 0.5s ease;
-  cursor: pointer;
+  position: relative;
+  margin: auto;
+  padding: 19px 22px;
+  transition: all 0.2s ease;
+  width: 180px;
 }
-.footer-content .btn-about:hover {
-  background-color: #209cee;
+.footer-content .btn-about span {
+  position: relative;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 900;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+.footer-content .btn-about:before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 26px;
+  display: block;
+  border-radius: 28px;
+  background: #5fb2e4;
+  width: 25px;
+  height: 25px;
+  transition: all 0.3s ease;
+}
+.footer-content .btn-about:hover:before {
+  width: 70%;
+  background: #5fb2e4;
+}
+.footer-content .btn-about:active {
+  transform: scale(0.96);
 }
 .footer-content .footer-link {
   width: 100%;
