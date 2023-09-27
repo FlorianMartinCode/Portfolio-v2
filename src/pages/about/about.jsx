@@ -5,7 +5,7 @@ import CssImg from '../../assets/icon-skills/css.png';
 import SassImg from '../../assets/icon-skills/sass.png';
 import JsImg from '../../assets/icon-skills/js.png';
 import ReactImg from '../../assets/icon-skills/react.png';
-import Data from '../../Data/data.json';
+import Data from '../../Data/data.js';
 import Modal from '../../components/main/modal/modal';
 
 function About() {

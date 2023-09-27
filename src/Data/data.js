@@ -1,0 +1,98 @@
+const data = {
+  "personal-info-1": [
+    {
+      "label": "Nom",
+      "value": "Martin"
+    },
+    {
+      "label": "Prénom",
+      "value": "Florian"
+    },
+    {
+      "label": "Age",
+      "value": "25 ans"
+    },
+    {
+      "label": "Nationalité",
+      "value": "Française"
+    }
+  ],
+  "personal-info-2": [
+    {
+      "label": "Freelance",
+      "value": "Disponible"
+    },
+    {
+      "label": "Adresse",
+      "value": "Paris"
+    },
+    {
+      "label": "Email",
+      "value": "florian.martin700@gmail.com"
+    },
+    {
+      "label": "Langages",
+      "value": "Français, Anglais"
+    }
+  ],
+  "portfolio-data": [
+    {
+      "id": 7,
+      "category": "OpenClassrooms",
+      "title": "Nina Carducci",
+      "cover": "https://i.goopics.net/dl7qk9.png",
+      "url": "https://florianmartincode.github.io/NinaCarducci/",
+      "alt": "Image de couverture pour Nina Carducci"
+    },
+    {
+      "id": 6,
+      "category": "OpenClassrooms",
+      "title": "Kasa",
+      "cover": "https://i.goopics.net/ss1s8r.png",
+      "url": "https://florianmartincode.github.io/Kasa/",
+      "alt": "Image de couverture pour Kasa"
+    },
+    {
+      "id": 5,
+      "category": "OpenClassrooms",
+      "title": "Portfolio Sophie Bluel",
+      "cover": "https://i.goopics.net/pt9edx.png",
+      "url": "https://github.com/FlorianMartinCode/PortfolioArchitecteSophieBluel",
+      "alt": "Image de couverture pour Portfolio Sophie Bluel"
+    },
+    {
+      "id": 4,
+      "category": "OpenClassrooms",
+      "title": "PrintIt",
+      "cover": "https://i.goopics.net/15qn1e.png",
+      "url": "https://florianmartincode.github.io/PrintIt/",
+      "alt": "Image de couverture pour PrintIt"
+    },
+    {
+      "id": 3,
+      "category": "OpenClassrooms",
+      "title": "OhMyFood",
+      "cover": "https://i.goopics.net/nfo43v.png",
+      "url": "https://florianmartincode.github.io/OhMyFood/",
+      "alt": "Image de couverture pour OhMyFood"
+    },
+    {
+      "id": 2,
+      "category": "OpenClassrooms",
+      "title": "Booki",
+      "cover": "https://i.goopics.net/a1hl3n.png",
+      "url": "https://florianmartincode.github.io/Booki/#",
+      "alt": "Image de couverture pour Booki"
+    },
+    {
+      "id": 1,
+      "category": "OpenClassrooms",
+      "title": "Riding Cities",
+      "cover": "https://i.goopics.net/ypkxl2.png",
+      "url": "https://florianmartincode.github.io/RidingCities/",
+      "alt": "Image de couverture pour Riding Cities"
+    }
+  ]
+};
+
+export default data;

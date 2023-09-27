@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Slider from '../../components/main/Slider/slider';
 import Card from '../../components/main/card/card';
-import data from '../../Data/data.json';
+import data from '../../Data/data.js';
 
 function Portfolio() {
   const [selectedCategory, setSelectedCategory] = useState('all');
