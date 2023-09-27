@@ -21,6 +21,10 @@
   .modal-content {
     background-color: #333;
   }
+
+  .card-link .description {
+    background-color: rgba(71, 71, 71, 0.8);
+  }
 }
   
 /* Thème clair (par défaut) */
@@ -45,6 +49,10 @@
 
   .modal-content {
     background-color: #fff;
+  }
+
+  .card-link .description {
+    background-color: rgba(255, 255, 255, 0.8);
   }
 }
   

@@ -5,6 +5,7 @@ import data from '../../Data/data.js';
 
 function Portfolio() {
   const [selectedCategory, setSelectedCategory] = useState('all');
+  const [openCardId, setOpenCardId] = useState(null);
 
   const sortedData = data["portfolio-data"].sort((a, b) => {
     if (a.category < b.category) {
@@ -51,6 +52,9 @@ function Portfolio() {
               alt={item.alt}
               title={item.title}
               url={item.url}
+              description={item.description}
+              openCardId={openCardId}
+              setOpenCardId={setOpenCardId}
             />
           ))}
         </div>
