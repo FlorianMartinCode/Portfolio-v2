@@ -45,18 +45,22 @@ function Portfolio() {
         </div>
 
         <div className='cards-all'>
-          {filteredData.map((item) => (
-            <Card
-              key={item.id}
-              cover={item.cover}
-              alt={item.alt}
-              title={item.title}
-              url={item.url}
-              description={item.description}
-              openCardId={openCardId}
-              setOpenCardId={setOpenCardId}
-            />
-          ))}
+          {filteredData.length === 0 ? (
+            <p>Rien à afficher</p>
+          ) : (
+            filteredData.map((item) => (
+              <Card
+                key={item.id}
+                cover={item.cover}
+                alt={item.alt}
+                title={item.title}
+                url={item.url}
+                description={item.description}
+                openCardId={openCardId}
+                setOpenCardId={setOpenCardId}
+              />
+            ))
+          )}
         </div>
       </section>
     </div>

@@ -3,7 +3,7 @@
 .home-content {
   display: flex;
   justify-content: space-around;
-  padding: 80px 0 125px 0;
+  padding: 80px 0 180px 0;
 }
 .home-content .home-pdp {
   align-items: center;
@@ -124,7 +124,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding-bottom: 118px;
+  padding-bottom: 172px;
 }
 .about-content-info .about-content-left {
   animation: slideInLeft 1s ease forwards;
