@@ -61,7 +61,8 @@ const data = {
         "https://i.goopics.net/orgwz9.png",
         "https://i.goopics.net/1ylrgn.png",
         "https://i.goopics.net/qe7k8w.png",
-        "https://i.goopics.net/8wmxf4.png"
+        "https://i.goopics.net/8wmxf4.png",
+        "https://i.goopics.net/3xjr57.png"
 
       ]
     },
@@ -76,7 +77,8 @@ const data = {
       "logos": [
         "https://i.goopics.net/orgwz9.png",
         "https://i.goopics.net/1ylrgn.png",
-        "https://i.goopics.net/qe7k8w.png"
+        "https://i.goopics.net/qe7k8w.png",
+        "https://i.goopics.net/3xjr57.png"
       ]
     },
     {
@@ -103,7 +105,8 @@ const data = {
       "description": "L'entreprise oh my food souhaitait un site mobile first qui répertorie les menus de restaurants gastronomiques. Il fallait le développer pour mobile, tablette et desktop en s’appuyant rigoureusement sur les informations déterminées dans le brief créatif et inclure des animations soignées !",
       "logos": [
         "https://i.goopics.net/orgwz9.png",
-        "https://i.goopics.net/1ylrgn.png"
+        "https://i.goopics.net/1ylrgn.png",
+        "https://i.goopics.net/3xjr57.png"
       ]
     },
     {
