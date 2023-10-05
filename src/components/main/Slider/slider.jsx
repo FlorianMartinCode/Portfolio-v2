@@ -9,20 +9,20 @@ function Slider() {
     const portfolioData = data['portfolio-data'];
     const Project = portfolioData[currentIndex];
 
-    const prevSlide = () => {
+    const nextSlide = () => {
         setCurrentIndex((prevIndex) =>
             (prevIndex + 1) % portfolioData.length
         );
     };
 
-    const nextSlide = () => {
+    const prevSlide = () => {
         setCurrentIndex((prevIndex) =>
             (prevIndex - 1 + portfolioData.length) % portfolioData.length
         );
     };
 
     useEffect(() => {
-        const intervalId = setInterval(prevSlide, 5000);
+        const intervalId = setInterval(nextSlide, 5000);
 
         return () => clearInterval(intervalId);
     });
