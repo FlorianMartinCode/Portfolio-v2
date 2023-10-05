@@ -55,6 +55,7 @@ function Portfolio() {
                 alt={item.alt}
                 title={item.title}
                 url={item.url}
+                logos={item.logos}
                 description={item.description}
                 openCardId={openCardId}
                 setOpenCardId={setOpenCardId}
