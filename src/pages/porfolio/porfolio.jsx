@@ -9,13 +9,14 @@ function Portfolio() {
 
   const sortedData = data["portfolio-data"].sort((a, b) => {
     if (a.category < b.category) {
-      return -1;
+      return 1;
     }
     if (a.category > b.category) {
-      return 1;
+      return -1;
     }
     return 0;
   });
+
 
   let filteredData = sortedData;
 
@@ -48,13 +49,14 @@ function Portfolio() {
           {filteredData.length === 0 ? (
             <p>Rien à afficher</p>
           ) : (
-            filteredData.map((item) => (
+            filteredData.slice().reverse().map((item) => (
               <Card
                 key={item.id}
                 cover={item.cover}
                 alt={item.alt}
                 title={item.title}
                 url={item.url}
+                githubUrl={item.githubUrl}
                 logos={item.logos}
                 description={item.description}
                 openCardId={openCardId}

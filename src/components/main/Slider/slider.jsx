@@ -6,7 +6,7 @@ import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons
 
 function Slider() {
     const [currentIndex, setCurrentIndex] = useState(0);
-    const portfolioData = data['portfolio-data'];
+    const portfolioData = data['portfolio-data'].slice().reverse();
     const Project = portfolioData[currentIndex];
 
     const nextSlide = () => {

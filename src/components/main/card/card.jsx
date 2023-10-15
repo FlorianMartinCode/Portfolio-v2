@@ -1,6 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-function Card({ cover, alt, title, url, description, logos, openCardId, setOpenCardId }) {
+function Card({ cover, alt, title, url, githubUrl, description, logos, openCardId, setOpenCardId }) {
   const isDescriptionVisible = openCardId === title;
 
   const toggleDescriptionVisibility = () => {
@@ -24,9 +25,16 @@ function Card({ cover, alt, title, url, description, logos, openCardId, setOpenC
               ))}
             </div>
             <p>{description}</p>
-            <a href={url} target="_blank" rel="noopener noreferrer">
-              Visiter le site
-            </a>
+            {url && (
+              <Link to={url} target="_blank" rel="noopener noreferrer">
+                Visiter le site
+              </Link>
+            )}
+            {githubUrl && (
+              <Link to={githubUrl} target="_blank" rel="noopener noreferrer">
+                Voir sur GitHub
+              </Link>
+            )}
           </div>
         )}
       </article>
