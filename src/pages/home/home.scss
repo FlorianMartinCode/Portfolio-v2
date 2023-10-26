@@ -21,6 +21,8 @@
             border: 2px solid #d3d3d379;
             border-radius: 50%;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            width: 100%;
+            height: 100%;
         }
     }
 
@@ -76,10 +78,6 @@
             margin: auto;
             border: none;
             padding: 0;
-            
-            img {
-                width: 100%;
-            }
         }
 
         .home-text-et-btn {
