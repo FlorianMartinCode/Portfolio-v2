@@ -40,7 +40,6 @@
 
   .card-logos {
     display: flex;
-    // margin-bottom: 20px;
   }
 
   .card-logos img {
@@ -51,14 +50,19 @@
   }
 
   p {
-    font-size: 16px;
+    font-size: 15px;
     text-align: center;
+  }
+
+  .card-link-url {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
   }
 
   a {
     font-size: 18px;
     text-align: center;
-    // margin-top: 20px;
 
     &:hover {
       color: #209cee;
@@ -75,5 +79,6 @@
 
   .card-link .description {
     justify-content: space-between;
+
   }
 }

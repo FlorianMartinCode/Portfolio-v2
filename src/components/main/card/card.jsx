@@ -25,6 +25,7 @@ function Card({ cover, alt, title, url, githubUrl, description, logos, openCardI
               ))}
             </div>
             <p>{description}</p>
+            <div className='card-link-url'>
             {url && (
               <Link to={url} target="_blank" rel="noopener noreferrer">
                 Visiter le site
@@ -35,6 +36,7 @@ function Card({ cover, alt, title, url, githubUrl, description, logos, openCardI
                 Voir sur GitHub
               </Link>
             )}
+            </div>
           </div>
         )}
       </article>

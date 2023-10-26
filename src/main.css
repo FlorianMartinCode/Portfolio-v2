@@ -76,7 +76,7 @@
   content: "";
   position: absolute;
   top: 15px;
-  left: 26px;
+  left: 27px;
   display: block;
   border-radius: 28px;
   background: #5fb2e4;
@@ -85,7 +85,7 @@
   transition: all 0.3s ease;
 }
 .home-content .home-text-et-btn .btn-about:hover:before {
-  width: 70%;
+  width: 67%;
   background: #5fb2e4;
 }
 .home-content .home-text-et-btn .btn-about:active {
@@ -118,6 +118,7 @@
   .home-content .home-text-et-btn .home-description {
     text-align: center;
     line-height: 1;
+    padding: 25px 0;
   }
 }
 .about-content-info {
@@ -164,7 +165,6 @@
   justify-content: space-between;
   padding: 15px;
   gap: 15px;
-  background-image: url("https://i.goopics.net/9i6waf.png");
   animation: slideInRight 1s ease forwards;
 }
 .about-content-info .about-content-right .content-right {
@@ -472,7 +472,7 @@ nav .theme-switch .slider i.fa-moon {
   content: "";
   position: absolute;
   top: 15px;
-  left: 26px;
+  left: 27px;
   display: block;
   border-radius: 28px;
   background: #5fb2e4;
@@ -481,7 +481,7 @@ nav .theme-switch .slider i.fa-moon {
   transition: all 0.3s ease;
 }
 .footer-content .btn-about:hover:before {
-  width: 70%;
+  width: 67%;
   background: #5fb2e4;
 }
 .footer-content .btn-about:active {
@@ -753,8 +753,13 @@ nav .theme-switch .slider i.fa-moon {
   margin: 0 5px;
 }
 .card-link .description p {
-  font-size: 16px;
+  font-size: 15px;
   text-align: center;
+}
+.card-link .description .card-link-url {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 .card-link .description a {
   font-size: 18px;
@@ -783,13 +788,7 @@ nav .theme-switch .slider i.fa-moon {
 .dark-theme span#dynamic-title {
   color: #fff;
 }
-.dark-theme .about-content-right,
-.dark-theme .content-right {
-  border: 2px solid rgba(211, 211, 211, 0.089);
-  background-color: #333;
-}
-.dark-theme .about-content-right h2,
-.dark-theme .content-right h2 {
+.dark-theme .about-content-right .content-right h2 {
   border-bottom: 1px solid rgba(211, 211, 211, 0.089);
 }
 .dark-theme .modal-content {
@@ -808,13 +807,7 @@ nav .theme-switch .slider i.fa-moon {
 .light-theme span#dynamic-title {
   color: #000;
 }
-.light-theme .about-content-right,
-.light-theme .content-right {
-  border: 2px solid rgba(211, 211, 211, 0.4745098039);
-  background-color: #fff;
-}
-.light-theme .about-content-right h2,
-.light-theme .content-right h2 {
+.light-theme .about-content-right .content-right h2 {
   border-bottom: 1px solid rgba(211, 211, 211, 0.4745098039);
 }
 .light-theme .modal-content {
@@ -828,6 +821,10 @@ nav .theme-switch .slider i.fa-moon {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto";
 }
 
 .loading-container {

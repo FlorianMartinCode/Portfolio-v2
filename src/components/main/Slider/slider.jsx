@@ -30,8 +30,8 @@ function Slider() {
     return (
         <section className="slider">
             <div className='slider-link'>
-                <Link to={Project.url} target="_blank" rel="noopener noreferrer">
-                    <img className='cover' src={Project.cover} alt={Project.title} />
+                <Link to={Project.url || Project.githubUrl} target="_blank" rel="noopener noreferrer">
+                    <img className='cover' src={Project.cover} alt={Project.title}/>
                 </Link>
             </div>
             <button className='btn-left' onClick={prevSlide}>

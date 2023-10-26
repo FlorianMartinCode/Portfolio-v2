@@ -26,6 +26,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: "Roboto",;
+}
+
 .loading-container {
     position: fixed;
     backdrop-filter: blur(5px);

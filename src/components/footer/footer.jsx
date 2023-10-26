@@ -17,9 +17,6 @@ function Footer() {
         <Link to="https://github.com/FlorianMartinCode" target="_blank" rel="noreferrer">
           <img src={GitHub} alt="logo github" />
         </Link>
-        <Link to="https://twitter.com/florian_martin" target="_blank" rel="noreferrer">
-          <img src={Twitter} alt="logo x" />
-        </Link>
       </div>
       <p className='copyright'>© 2023 Florian MARTIN. Tous droits réservés.</p>
     </footer>

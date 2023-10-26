@@ -29,10 +29,6 @@ const data = {
     {
       "label": "Email",
       "value": "florian.martin700@gmail.com"
-    },
-    {
-      "label": "Langages",
-      "value": "Français, Anglais"
     }
   ],
   "portfolio-data": [
@@ -131,13 +127,14 @@ const data = {
       "id": 7,
       "category": "OpenClassrooms",
       "title": "724 Events",
-      "cover": "",
+      "cover": "https://i.goopics.net/7pao8r.png",
       "githubUrl": "https://github.com/FlorianMartinCode/724-Events",
       "alt": "Image de couverture pour 724 Events",
-      "description": "",
+      "description": "L’agence 724 Events souhaitait publier la nouvelle version de son site vitrine. Il s’agit d’un site one-page. Le design avait été validé, et un premier développeur freelance avait commencé l’intégration. Ce freelance a dû abandonner le projet pour raisons personnelles. Le site était fonctionnel, mais quelques bugs entravaient le bon usage par les visiteurs. 724events a donc fait appel à moi pour finaliser le travail.",
       "logos": [
         "https://i.goopics.net/orgwz9.png",
-        "https://i.goopics.net/1ylrgn.png"
+        "https://i.goopics.net/1ylrgn.png",
+        "https://i.goopics.net/qe7k8w.png"
       ]
     }
   ]
