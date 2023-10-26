@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 import './footer.scss'
 import LinkedIn from '../../assets/reseau/linkedin.png'
 import GitHub from '../../assets/reseau/github.png'
-import Twitter from '../../assets/reseau/twitter.png'
 
 function Footer() {
 

@@ -103,7 +103,6 @@ nav {
       i.fa-sun {
         left: 1px;
         opacity: 1;
-        // font-size: 16px;
       }
   
       i.fa-moon {
@@ -119,7 +118,7 @@ nav {
     display: flex;
     flex-direction: row;
     height: 100%;
-    align-items: start;
+    align-items: flex-start;
     padding: 0;
   
     img {

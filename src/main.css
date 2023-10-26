@@ -424,7 +424,7 @@ nav .theme-switch .slider i.fa-moon {
     display: flex;
     flex-direction: row;
     height: 100%;
-    align-items: start;
+    align-items: flex-start;
     padding: 0;
   }
   nav img {
