@@ -645,7 +645,6 @@ nav .theme-switch .slider i.fa-moon {
     right: 25%;
   }
 }
-/* modal.scss */
 .modal {
   display: none;
   position: fixed;
@@ -699,7 +698,7 @@ nav .theme-switch .slider i.fa-moon {
 }
 
 @media screen and (max-width: 768px) {
-  .modal-content {
+  .modal .modal-content {
     max-width: 80%;
     max-height: 80%;
     padding: 20px 10px;
